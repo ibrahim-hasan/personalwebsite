@@ -69,6 +69,28 @@ padding: 10px 5% 0 5%;
   padding: 0rem 5rem;
 }
 
+.display-3 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.about-me {
+  background-color: #CCC;
+}
+.jumbotron {
+  background-color: transparent;
+}
+
+p.lead {
+  text-align: justify;
+  display:inline-block;
+}
+p.lead {
+  text-indent: 1em;
+}
+.main-image img {
+  width: 100%
+}
+
 #navbar-brand {
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 2s;
@@ -82,16 +104,6 @@ padding: 10px 5% 0 5%;
   -ms-animation-duration: 2s;
   -ms-animation-delay: 2s;
   -ms-animation-iteration-count: infinite;
-}
-
-img::selection {
-color: white;
-background: transparent;
-}
-
-img::-moz-selection {
-color: white;
-background: transparent;
 }
 
 header.masthead {
@@ -113,3 +125,43 @@ background-size: cover;
   header.masthead {
     height: 100%;
     min-height: 600px; } }
+
+.polaroid-images a
+{
+	background: white;
+	display: inline;
+	float: left;
+	margin: 0 15px 30px;
+	padding: 10px 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index:0;
+  position:relative;
+}
+.polaroid-images a:after {
+	color: #333;
+	font-size: 24px;
+	content: attr(title);
+	position: relative;
+	top:15px;
+}
+/*.polaroid-images img {
+	display: block;
+	width: inherit;
+}
+
+.polaroid-images a:hover {
+-webkit-transform: scale(1.2);
+-moz-transform: scale(1.2);
+transform: scale(1.2);
+z-index:10;
+-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}*/
