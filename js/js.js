@@ -6,7 +6,7 @@ $('document').ready(function() {
       fadeInDown = 'fadeInDown';
 
   document.scroll(function() {
-    if(document.scrollTop() >= 150) {
+    if(document.scrollTop() >= 100) {
 
       element.addClass(navbarDefault);
       element.removeClass(navbarTransparent);

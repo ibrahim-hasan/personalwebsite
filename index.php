@@ -14,6 +14,7 @@
     <script src="https://use.fontawesome.com/4a955cab7e.js"></script>
     <!-- My Custom Stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="node_modules/mdbootstrap/css/mdb.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     </head>
@@ -41,73 +42,96 @@
                   </li>
               </div>
             </nav>
-        </header>
-        <section class="bg-primary" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-center">
-                        <h2 class="section-heading text-white">We've got what you need!</h2>
-                        <hr class="light">
-                        <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                        <a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a>
-                    </div>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1 id="homeHeading">Ibrahim Hasan</h1>
+                    <hr>
+                    <p>Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Want to know me more?</a>
                 </div>
             </div>
+        </header>
+        <div>
+          <section class="">
+          </section>
+        </div>
+        <div>
+          <section class="about-me">
+            <div class="jumbotron container">
+              <div class="row">
+                <div class="col-lg-7 col-sm-12">
+                  <h1 class="display-3">Who am I?</h1>
+                  <p class="lead">Here is some background information about me: I am Ibrahim from Syria.
+                  I am a mechatronics engineer, graduated in 2015.
+                  I have an ambition, and in order to fulfill it, I have to work hard, think smart,
+                  and improve myself. My mother tongue is Arabic, and I am fluent in English.
+                  I am an excellent computer user. Recently, I have become interested in web development;
+                  in fact, this website is my first project as a front-end web developer, and it was designed using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end web development needs to be broadened, thus I am learning PHP.</p>
+                  <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                  </p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4 main-image polaroid-images">
+                    <a href="" title="It's me!"><img src="img/ibrahimhasan.JPG" alt="Personal Photo"/></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <hr class="my-4">
+                  <p class="lead">I am available. I would be happy to discuss possible work!</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <div class="container">
-            <div class="content">
-                <div class="introBox">
-                    <div class="image">
-                        <img src="img/PersonalPicture.JPG" alt="Personal Photo"/>
-                        <span>Thank you for visiting my website!</span>
-                    </div>
-                    <div class="briefIntro">
-                        <snap class="welcome">Welcome to ... <br>
-                        <snap style="font-weight:bold">&nbsp &nbsp &nbsp &nbsp &nbsp my personal blog!</snap></snap>
-                        <br>
-                        <br>
-                        <div class="aboutMe" style="font-style:italic">
-                            Here is some background information about me: I am Ibrahim from Syria.
-                            I am a mechatronics engineer, graduated in 2015.
-                            I have an ambition, and in order to fulfill it, I have to work hard, think smart,
-                            and improve myself. My mother tongue is Arabic, and I am fluent in English.
-                            I am an excellent computer user. Recently, I have become interested in web development;
-                            in fact, this website is my first project as a front-end web developer, and it was designed using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end web development needs to be broadened, thus I am learning PHP.
-                            <br>I am currently looking for a job. I would be happy to discuss possible work!
+          <!--Footer-->
+        <footer class="page-footer indigo center-on-small-only pt-0">
+
+            <!--Footer Links-->
+            <div class="container">
+
+                <!--First row-->
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-12">
+
+                        <div class="footer-socials mb-5 flex-center">
+                            <!--Facebook-->
+                            <a class="icons-sm fb-ic" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+                            <!--Skype-->
+                            <a href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
+                            <!--Linkedin-->
+                            <a class="icons-sm li-ic" href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                            <!--Email-->
+                            <a href="mailto: ibrahim_hasan_eng@hotmail.com"><i class="fa fa-envelope fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
+                            <!--Phone Number-->
+                            <a href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
                         </div>
                     </div>
+                    <!--/First column-->
+                </div>
+                <!--/First row-->
+            </div>
+            <!--/Footer Links-->
+
+            <!--Copyright-->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                  Copyright &copy; 2018 by Ibrahim Hasan. All Rights Reserved.
                 </div>
             </div>
-        </div>
-        <footer>
-            <div class="container">
-                <div class="contact">
-                    <div class="contactMe">
-                        <h3>Contact me</h3>
-                        <ul>
-                            <li><a href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a></li>
-                            <li><a href="skype: ibrahim_hasan"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></li>
-                            <li><a href="mailto: ibrahim_hasan_eng@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="followMe">
-                        <h3>Follow me</h3>
-                        <ul>
-                            <li><a href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
-                            <li><a href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!--/Copyright-->
+
         </footer>
-          <div class="copyRight">
-              Copyright &copy; 2016 by Ibrahim Hasan. All Rights Reserved.
-          </div>
+        <!--/Footer-->
       <!-- Header Shrinks On Scroll -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
       <script type="text/javascript" src="js/js.js"></script>
     </body>
 </html>
