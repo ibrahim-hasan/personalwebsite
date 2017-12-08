@@ -5,8 +5,15 @@ $('document').ready(function() {
       navbarTransparent = 'navbar-transparent',
       fadeInDown = 'fadeInDown';
 
-  document.scroll(function() {
-    if(document.scrollTop() >= 100) {
+doTheMagic();
+
+document.scroll(
+  function() {
+    doTheMagic();
+  });
+
+function doTheMagic() {
+    if(document.scrollTop() > 100) {
 
       element.addClass(navbarDefault);
       element.removeClass(navbarTransparent);
@@ -16,7 +23,6 @@ $('document').ready(function() {
       element.addClass(navbarTransparent);
       element.removeClass(navbarDefault);
 
-      element.removeClass(fadeInDown);
+      element.removeClass(fadeInDown);}
     }
-  });
 });

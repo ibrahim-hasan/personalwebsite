@@ -101,7 +101,7 @@
                             <!--Facebook-->
                             <a class="icons-sm fb-ic" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
                             <!--Skype-->
-                            <a href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
+                            <a href="tel: (+90) 531 959 1332"><i class="fa fa-skype fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
                             <!--Linkedin-->
                             <a class="icons-sm li-ic" href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
                             <!--Email-->
