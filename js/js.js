@@ -1,6 +1,6 @@
 $('document').ready(function() {
   var document = $(window),
-      element = $('.navbar'),
+      navbar = $('.navbar'),
       navbarDefault = 'bg-dark',
       navbarTransparent = 'navbar-transparent',
       fadeInDown = 'fadeInDown';
@@ -15,14 +15,14 @@ document.scroll(
 function doTheMagic() {
     if(document.scrollTop() > 100) {
 
-      element.addClass(navbarDefault);
-      element.removeClass(navbarTransparent);
+      navbar.addClass(navbarDefault);
+      navbar.removeClass(navbarTransparent);
 
-      element.addClass(fadeInDown);
+      navbar.addClass(fadeInDown);
     } else {
-      element.addClass(navbarTransparent);
-      element.removeClass(navbarDefault);
+      navbar.addClass(navbarTransparent);
+      navbar.removeClass(navbarDefault);
 
-      element.removeClass(fadeInDown);}
+      navbar.removeClass(fadeInDown);}
     }
 });

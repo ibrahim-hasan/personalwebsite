@@ -79,9 +79,7 @@ padding: 10px 5% 0 5%;
 p.lead {
   text-align: justify;
   display:inline-block;
-}
-p.lead {
-  text-indent: 1em;
+  text-indent: 0;
 }
 .main-image img {
   width: 100%
