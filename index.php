@@ -44,23 +44,22 @@
               </div>
             </nav>
           </div>
-
-          <section class="masthead">
-            <div class="row container jumbotron jumbotron-fluid">
-              <div class="col-lg-12 center">
-                <h1 class="display-3">Ibrahim Hasan</h1>
-                <hr>
-                <p class="lead">Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
-                <br>
-                <a class="btn btn-primary btn-xl" href="#about">Want to know me more?</a>
-              </div>
-            </div>
-          </section>
         </header>
 
-        <div class="container">
+        <div class="container masthead text-center">
+          <div class="row">
+            <div class="col-lg-12 center">
+              <h1 class="display-3">Ibrahim Hasan</h1>
+              <hr>
+              <p class="lead">Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
+              <br>
+              <a class="btn btn-primary btn-xl" href="#about">Want to know me more?</a>
+            </div>
+          </div>
+        </div>
+
           <section class="about-me">
-            <div class="jumbotron">
+            <div class="container">
               <div class="row">
                 <div class="col-lg-7 col-sm-12">
                   <h1 class="display-3">Who am I?</h1>
@@ -71,7 +70,7 @@
                   I am an excellent computer user. Recently, I have become interested in web development;
                   in fact, this website is my first project as a front-end web developer, and it was designed using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end web development needs to be broadened, thus I am learning PHP.</p>
                   <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-outline-info" href="#" role="button">Learn more</a>
                   </p>
                 </div>
                 <div class="col-lg-1"></div>
@@ -79,28 +78,32 @@
                     <a href="" title="It's me!"><img src="img/ibrahimhasan.JPG" alt="Personal Photo"/></a>
                 </div>
               </div>
+            </div>
+          </section>
+          <section class="services">
+            <div class="container">
               <div class="row">
-                <div class="col-12">
-                  <hr class="my-4">
-                  <p class="lead">I am available. I would be happy to discuss possible work!</p>
+                <div class="col-8">
+                  <p class="text-center">Here you can see the services I can provide you.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-          <!--Footer-->
-        <footer class="page-footer indigo center-on-small-only pt-0">
-
-            <!--Footer Links-->
+          </section>
+          <section class="projects">
             <div class="container">
-
-                <!--First row-->
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-center">I am available. I would be happy to discuss possible work!</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Footer-->
+        <footer class="footer">
+            <div class="container">
                 <div class="row">
-
-                    <!--First column-->
                     <div class="col-md-12">
-
-                        <div class="footer-socials mb-5 flex-center">
+                        <div class="mb-5 text-center">
                             <!--Facebook-->
                             <a class="icons-sm fb-ic" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
                             <!--Skype-->
@@ -113,11 +116,8 @@
                             <a href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <!--/First column-->
                 </div>
-                <!--/First row-->
             </div>
-            <!--/Footer Links-->
 
             <!--Copyright-->
             <div class="footer-copyright">

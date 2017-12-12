@@ -1,7 +1,7 @@
 $('document').ready(function() {
   var document = $(window),
       navbar = $('.navbar'),
-      navbarDefault = 'bg-dark',
+      navbarDefault = 'bg-dark fixed',
       navbarTransparent = 'navbar-transparent',
       fadeInDown = 'fadeInDown';
 
@@ -25,4 +25,9 @@ function doTheMagic() {
 
       navbar.removeClass(fadeInDown);}
     }
+});
+
+$(function () {
+  "use strict";
+  $("section, header").height($(window).height());
 });
