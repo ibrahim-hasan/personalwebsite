@@ -13,7 +13,7 @@ document.scroll(
   });
 
 function doTheMagic() {
-    if(document.scrollTop() > 100) {
+    if(document.scrollTop() > 80) {
 
       navbar.addClass(navbarDefault);
       navbar.removeClass(navbarTransparent);

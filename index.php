@@ -48,7 +48,7 @@
           <section class="masthead">
             <div class="row container jumbotron jumbotron-fluid">
               <div class="col-lg-12 center">
-                <h1 class="display-3 text-center">Ibrahim Hasan</h1>
+                <h1 class="display-3">Ibrahim Hasan</h1>
                 <hr>
                 <p class="lead">Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
                 <br>
