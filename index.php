@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     </head>
     <body>
-        <header class="masthead">
+        <header>
+          <div class="header inner">
             <nav class="navbar-transparent navbar navbar-expand-lg navbar-dark sticky-top animated fadeIn">
               <a class="navbar-brand animated pulse" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,22 +43,24 @@
                   </li>
               </div>
             </nav>
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <h1 id="homeHeading">Ibrahim Hasan</h1>
-                    <hr>
-                    <p>Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
-                    <a class="btn btn-primary btn-xl" href="#about">Want to know me more?</a>
-                </div>
+          </div>
+
+          <section class="masthead">
+            <div class="row container jumbotron jumbotron-fluid">
+              <div class="col-lg-12 center">
+                <h1 class="display-3 text-center">Ibrahim Hasan</h1>
+                <hr>
+                <p class="lead">Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
+                <br>
+                <a class="btn btn-primary btn-xl" href="#about">Want to know me more?</a>
+              </div>
             </div>
-        </header>
-        <div>
-          <section class="">
           </section>
-        </div>
-        <div>
+        </header>
+
+        <div class="container">
           <section class="about-me">
-            <div class="jumbotron container">
+            <div class="jumbotron">
               <div class="row">
                 <div class="col-lg-7 col-sm-12">
                   <h1 class="display-3">Who am I?</h1>

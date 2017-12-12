@@ -28,6 +28,12 @@ font-size: 16px;
 line-height: 1.5;
 margin-bottom: 20px;
 }
+
+hr {
+  max-width: 70%;
+  border-width: 2px;
+  border-color: #256b7b; }
+
 /* Default Navbar Style: */
 .bg-dark {
 background-color: #256b7b !important;
@@ -43,6 +49,12 @@ background-color: #256b7b !important;
   text-transform: uppercase;
 }
 
+.btn-primary {
+    background-color: #256b7b;
+}
+.btn-primary:hover {
+  background-color: #58a3b5 !important;
+}
 
 /* When-srolling Navbar Style: */
 .navbar-transparent .navbar {
@@ -71,6 +83,7 @@ padding: 10px 5% 0 5%;
 }
 .about-me {
   background-color: #CCC;
+  top:600px;
 }
 .jumbotron {
   background-color: transparent;
@@ -99,86 +112,6 @@ p.lead {
   -ms-animation-delay: 2s;
   -ms-animation-iteration-count: infinite;
 }
-
-header.masthead {
-position: relative;
-width: 100%;
-height: 500px;
-min-height: auto;
-text-align: center;
-color: white;
-background-image: url("../img/header.jpg");
-background-position: center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;}
-header.masthead .header-content {
-  position: relative;
-  width: 100%;
-  padding: 100px 15px 100px;
-  text-align: center; }
-  header.masthead .header-content .header-content-inner h1 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-transform: uppercase; }
-  header.masthead .header-content .header-content-inner hr {
-    margin: 30px auto; }
-  header.masthead .header-content .header-content-inner p {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 50px;
-    color: rgba(255, 255, 255, 0.7); }
-@media (min-width: 768px) {
-  header.masthead {
-    height: 100%;
-    min-height: 600px; }
-    header.masthead .header-content {
-      position: absolute;
-      top: 50%;
-      padding: 0 50px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-      header.masthead .header-content .header-content-inner {
-        max-width: 1000px;
-        margin-right: auto;
-        margin-left: auto; }
-        header.masthead .header-content .header-content-inner h1 {
-          font-size: 50px; }
-        header.masthead .header-content .header-content-inner p {
-          font-size: 18px;
-          max-width: 80%;
-          margin-right: auto;
-          margin-left: auto; } }
-
-          @media (min-width: 768px) {
-            header.masthead {
-              height: 100%;
-              min-height: 600px; }
-              header.masthead .header-content {
-                position: absolute;
-                top: 50%;
-                padding: 0 50px;
-                -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                transform: translateY(-50%); }
-                header.masthead .header-content .header-content-inner {
-                  max-width: 1000px;
-                  margin-right: auto;
-                  margin-left: auto; }
-                  header.masthead .header-content .header-content-inner h1 {
-                    font-size: 50px; }
-                  header.masthead .header-content .header-content-inner p {
-                    font-size: 18px;
-                    max-width: 80%;
-                    margin-right: auto;
-                    margin-left: auto; }
-                    .navbar {
-                      padding: 0rem 5rem;
-                    } }
 
 .polaroid-images a
 {
@@ -229,4 +162,43 @@ footer.page-footer {
 }
 .jumbotron{
     box-shadow: none;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+  background-image: url(../img/header.jpg);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 650px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+.navbar {
+  padding: 0;
+  padding-left: 1rem!important;
+}
+.navbar-brand {
+  margin-left: 30px;
+  margin-right:0;
+}
+.navbar-collapse .collapse {
+  margin-right: 30px;
 }
