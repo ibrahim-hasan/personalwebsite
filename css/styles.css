@@ -15,7 +15,7 @@ section, header {
 }
 
 a {
-color: #256b7b;
+color: #FFFFFF;
 -webkit-transition: all .2s;
 -moz-transition: all .2s;
 transition: all .2s;
@@ -51,17 +51,11 @@ width:100%;
   background-color: transparent;
 }
 .bg-dark .navbar-nav>li>a {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.btn-primary {
-    background-color: #256b7b;
-}
-.btn-primary:hover {
-  background-color: #58a3b5 !important;
-}
 .btn-outline-info {
   background-color: transparent;
   color: #FFFFFF !important;
@@ -215,6 +209,12 @@ header {
 .navbar-collapse .collapse {
   margin-right: 30px;
 }
+.navbar-collapse {
+  margin-right: 30px;
+}
+.navbar-toggler {
+  margin-right: 20px
+}
 
 .services {
   background-color: white;
@@ -223,4 +223,40 @@ header {
 section.projects {
   background-color: yellow;
   color: white;
+}
+.badge, .btn, .btn-primary.active:not([disabled]):not(.disabled), .btn-primary:not([disabled]):not(.disabled):active, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .show>.btn-primary.dropdown-toggle, .z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+ul.socials {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+}
+li.list-item {
+  padding: 5px;
+  margin: 0 10px 0 10px;
+  display: inline-block
+}
+
+.copyright {
+  margin: 0;
+  background-color: #58a3b5;
+  font-size: 14px;
+}
+a.facebook:hover, a.facebook:focus {
+    color: #3b5998;
+}
+a.skype:hover, a.skype:focus {
+    color: #12A5F4;
+}
+a.linkedin:hover, a.linkedin:focus {
+    color: #007bb5;
+}
+a.email:hover, a.email:focus {
+    color: #dc3545;
+}
+a.phone:hover, a.phone:focus {
+    color: #28a745;
 }

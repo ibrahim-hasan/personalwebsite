@@ -5,17 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
     <!-- Different Title to Each Page -->
     <title>Home</title>
     <!-- Bootstrap Stylesheet CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <!-- fontAwesome for Text Icons CDN -->
-    <script src="https://use.fontawesome.com/4a955cab7e.js"></script>
-    <!-- My Custom Stylesheet -->
+    <!-- fontAwesome for Text Icons -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Google Font for Brand Name -->
     <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <!-- My Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Animate.css javascript Plugin -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     </head>
     <body>
@@ -53,7 +53,7 @@
               <hr>
               <p class="lead">Thank you for visiting my website. Please continue your journey. I promise you, you will not regret it!</p>
               <br>
-              <a class="btn btn-primary btn-xl" href="#about">Want to know me more?</a>
+              <a class="btn btn-outline-info" href="#about">Want to know me more?</a>
             </div>
           </div>
         </div>
@@ -100,20 +100,22 @@
           </section>
           <!--Footer-->
         <footer class="footer">
-            <div class="container">
+            <div class="socials container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="mb-5 text-center">
+                    <div class="col-md">
+                        <div class="mb-5">
+                          <ul class="socials">
                             <!--Facebook-->
-                            <a class="icons-sm fb-ic" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+                            <li class="list-item"><a class="facebook" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
                             <!--Skype-->
-                            <a href="tel: (+90) 531 959 1332"><i class="fa fa-skype fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
+                            <li class="list-item"><a class="skype" href="tel: (+90) 531 959 1332"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></li>
                             <!--Linkedin-->
-                            <a class="icons-sm li-ic" href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                            <li class="list-item"><a class="linkedin" href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin-square fa-2x"> </i></a></li>
                             <!--Email-->
-                            <a href="mailto: ibrahim_hasan_eng@hotmail.com"><i class="fa fa-envelope fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
+                            <li class="list-item"><a class="email" href="mailto: ibrahim_hasan_eng@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
                             <!--Phone Number-->
-                            <a href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-lg white-text mr-md-4" aria-hidden="true"></i></a>
+                            <li class="list-item"><a class="phone" href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a></li>
+                          </ul>
                         </div>
                     </div>
                 </div>
@@ -121,9 +123,9 @@
 
             <!--Copyright-->
             <div class="footer-copyright">
-                <div class="container-fluid">
+                <p class="copyright text-center">
                   Copyright &copy; 2018 by Ibrahim Hasan. All Rights Reserved.
-                </div>
+                </p>
             </div>
             <!--/Copyright-->
 
@@ -134,7 +136,6 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
       <script type="text/javascript" src="js/js.js"></script>
     </body>
 </html>
