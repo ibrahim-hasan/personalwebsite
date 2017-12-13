@@ -5,6 +5,16 @@ $('document').ready(function() {
       navbarTransparent = 'navbar-transparent',
       fadeInDown = 'fadeInDown';
 
+      var homeLink = $("a.nav-link.dropdown-toggle");
+      var homeDropdown = $("#home-dropdown");
+
+      homeLink.hover(function(){
+        homeDropdown.slideDown("fast");
+      });
+      $('#dropdown').mouseleave(function(){
+        $("#home-dropdown").slideUp("fast");
+      });
+
 doTheMagic();
 
 document.scroll(

@@ -85,6 +85,35 @@ padding: 10px 5% 0 5%;
 .navbar-expand-lg .navbar-nav .nav-link {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
+.dropdown-menu {
+  display:none;
+    min-width: 12rem;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform:uppercase;
+    list-style: none;
+    background-color: rgba(37, 107, 123, 0.4);
+    border-radius: 5px; }
+    .dropdown-menu li {
+      padding: 8px;
+      margin: 2px 0;
+    }
+    .dropdown-menu li a {
+      padding: 10px 50px;
+    }
+    .dropdown-menu a:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #FFFFFF;
+      text-decoration:none;
+    }
+    .dropdown-menu a:active {
+      background-color: #256b7b;
+      color: #FFFFFF;
+      text-decoration:none;
+    }
 
 .display-3 {
   font-size: 45px;
@@ -224,7 +253,7 @@ section.projects {
   background-color: yellow;
   color: white;
 }
-.badge, .btn, .btn-primary.active:not([disabled]):not(.disabled), .btn-primary:not([disabled]):not(.disabled):active, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .show>.btn-primary.dropdown-toggle, .z-depth-1 {
+.badge, .btn, .btn-primary.active:not([disabled]):not(.disabled), .btn-primary:not([disabled]):not(.disabled):active, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .show>.btn-primary.dropdown-toggle, .z-depth-1 {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
