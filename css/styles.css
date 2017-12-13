@@ -11,7 +11,7 @@ color: white;
 }
 
 section, header {
-  min-height: 600px
+  min-height: 630px
 }
 
 a {
@@ -54,6 +54,14 @@ width:100%;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+a.nav-link {
+  margin: 0 3px;
+}
+a.nav-link i.fa-chevron-down, i.fa-chevron-up {
+  font-size: 12px;
+  padding-left: 3px;
 }
 
 .btn-outline-info {
@@ -114,13 +122,16 @@ padding: 10px 5% 0 5%;
       color: #FFFFFF;
       text-decoration:none;
     }
+    .dropdown-toggle::after {
+    display: none;
+    }
 
 .display-3 {
   font-size: 45px;
   font-weight: 600;
 }
 .about-me .container {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .jumbotron {
   background-color: transparent;

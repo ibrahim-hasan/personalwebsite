@@ -7,12 +7,19 @@ $('document').ready(function() {
 
       var homeLink = $("a.nav-link.dropdown-toggle");
       var homeDropdown = $("#home-dropdown");
+      var dropdown = $('#dropdown');
+      var chevron = $('#chevron');
 
       homeLink.hover(function(){
+        $('#chevron').removeClass('fa-chevron-down');
+        $('#chevron').addClass('fa-chevron-up');
         homeDropdown.slideDown("fast");
       });
-      $('#dropdown').mouseleave(function(){
-        $("#home-dropdown").slideUp("fast");
+
+      dropdown.mouseleave(function(){
+        $('#chevron').removeClass('fa-chevron-up');
+        $('#chevron').addClass('fa-chevron-down');
+        homeDropdown.slideUp("fast");
       });
 
 doTheMagic();

@@ -30,7 +30,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                   <li id="dropdown" class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Home <span class="sr-only caret">(current)</span></a>
+                    <a class="nav-link dropdown-toggle" href="#">Home <i id="chevron" class="fa fa-chevron-down" aria-hidden="true"></i></a>
                     <ul id="home-dropdown" class="dropdown-menu">
                       <li><a href="#">About Me</a></li>
                       <li><a href="#">Services</a></li>
