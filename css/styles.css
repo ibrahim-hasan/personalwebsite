@@ -64,9 +64,9 @@ a.nav-link i.fa-chevron-down, i.fa-chevron-up {
   padding-left: 3px;
 }
 
-.btn-outline-info {
-  background-color: transparent;
-  color: #FFFFFF !important;
+.btn-outline-info,
+.btn-outline-warning {
+  color: #FFFFFF !important; /* '!improtant' is necessary to overwrite the Bootstrap property */
   border-color:#FFFFFF;
 }
 .btn-outline-info:hover {
@@ -132,6 +132,10 @@ padding: 10px 5% 0 5%;
 }
 .about-me .container {
   padding-top: 100px;
+  overflow: auto;
+}
+.main-image {
+  float: right;
 }
 .jumbotron {
   background-color: transparent;
@@ -144,7 +148,7 @@ p.lead {
   padding-top: 20px;
 }
 .main-image img {
-  width: 100%
+  width: 100%;
 }
 
 #navbar-brand {
@@ -180,13 +184,13 @@ p.lead {
 	z-index:0;
   position:relative;
 }
-.polaroid-images a:after {
+/* .polaroid-images a:after {
 	color: #333;
 	font-size: 24px;
 	content: attr(title);
 	position: relative;
 	top:15px;
-}
+} */
 /*.polaroid-images img {
 	display: block;
 	width: inherit;

@@ -66,8 +66,11 @@
 
           <section class="about-me">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-7 col-sm-12">
+              <div class="row justify-content-center">
+                <div class="col-md-4 main-image polaroid-images">
+                    <a href="" title="It's me!"><img src="img/ibrahimhasan.JPG" alt="Personal Photo"/></a>
+                </div>
+                <div class="col-md-7 col-12">
                   <h1 class="display-3">Who am I?</h1>
                   <p class="lead">Here is some background information about me: I am Ibrahim from Syria.
                   I am a mechatronics engineer, graduated in 2015.
@@ -75,13 +78,15 @@
                   and improve myself. My mother tongue is Arabic, and I am fluent in English.
                   I am an excellent computer user. Recently, I have become interested in web development;
                   in fact, this website is my first project as a front-end web developer, and it was designed using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end web development needs to be broadened, thus I am learning PHP.</p>
-                  <p class="lead">
-                    <a class="btn btn-outline-info" href="#" role="button">Learn more</a>
-                  </p>
+                  <hr>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-4 main-image polaroid-images">
-                    <a href="" title="It's me!"><img src="img/ibrahimhasan.JPG" alt="Personal Photo"/></a>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                  <p>
+                    <a class="btn btn-outline-info" href="#" role="button">Learn more about my resume</a> or check
+                    <a class="btn btn-outline-warning" href="#" role="button">My Projects</a>
+                  </p>
                 </div>
               </div>
             </div>
