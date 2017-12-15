@@ -6,8 +6,9 @@ height: 100%;
 
 body {
 font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-background-color: #256b7b;
-color: white;
+background: #42807d;
+color: #fff;
+line-height: 1.2;
 }
 
 section, header {
@@ -15,7 +16,7 @@ section, header {
 }
 
 a {
-color: #FFFFFF;
+color: #fff;
 -webkit-transition: all .2s;
 -moz-transition: all .2s;
 transition: all .2s;
@@ -35,13 +36,13 @@ margin-bottom: 20px;
 }
 
 hr {
-  max-width: 70%;
+  max-width: 60%;
   border-width: 2px;
-  border-color: #256b7b; }
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
 /* Default Navbar Style: */
 .bg-dark {
-background-color: #256b7b !important;
 position: fixed;
 width:100%;
 }
@@ -66,8 +67,8 @@ a.nav-link i.fa-chevron-down, i.fa-chevron-up {
 
 .btn-outline-info,
 .btn-outline-warning {
-  color: #FFFFFF !important; /* '!improtant' is necessary to overwrite the Bootstrap property */
-  border-color:#FFFFFF;
+  color: #fff !important; /* '!improtant' is necessary to overwrite the Bootstrap property */
+  border-color:#fff;
 }
 .btn-outline-info:hover {
   border-color: #58a3b5;
@@ -81,7 +82,7 @@ padding: 10px 5% 0 5%;
 .navbar-transparent .navbar-brand {
   font-family: 'Kaushan Script', 'Courgette';
   font-size: 40px;
-  color: white;
+  color: #fff;
 }
 .navbar-transparent .navbar-nav>li>a {
   font-size: 16px;
@@ -103,7 +104,7 @@ padding: 10px 5% 0 5%;
     text-align: center;
     text-transform:uppercase;
     list-style: none;
-    background-color: rgba(37, 107, 123, 0.4);
+    background-color: rgba(52, 58, 64, 0.5);
     border-radius: 5px; }
     .dropdown-menu li {
       padding: 8px;
@@ -113,7 +114,7 @@ padding: 10px 5% 0 5%;
       padding: 10px 50px;
     }
     .dropdown-menu a:hover {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(52, 58, 64, 0.9);
       color: #FFFFFF;
       text-decoration:none;
     }
@@ -130,13 +131,16 @@ padding: 10px 5% 0 5%;
   font-size: 45px;
   font-weight: 600;
 }
-.about-me .container {
-  padding-top: 100px;
+.about-me {
   overflow: auto;
+  background: #42807d;
+  height: auto !important; /* Solves the height of the container div not extending with its content */
 }
-.main-image {
-  float: right;
+.content {
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
+
 .jumbotron {
   background-color: transparent;
 }
@@ -145,7 +149,9 @@ p.lead {
   text-align: justify;
   display:inline-block;
   text-indent: 0;
-  padding-top: 20px;
+}
+.main-image {
+  float: left;
 }
 .main-image img {
   width: 100%;
@@ -261,11 +267,11 @@ header {
 }
 
 .services {
-  background-color: white;
+  background-color: #e6e5e5;
   color: #256b7b
 }
-section.projects {
-  background-color: yellow;
+.projects {
+  background-color: #7d7e80;
   color: white;
 }
 .badge, .btn, .btn-primary.active:not([disabled]):not(.disabled), .btn-primary:not([disabled]):not(.disabled):active, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .show>.btn-primary.dropdown-toggle, .z-depth-1 {
@@ -286,7 +292,7 @@ li.list-item {
 
 .copyright {
   margin: 0;
-  background-color: #58a3b5;
+  background-color: #42807d;
   font-size: 14px;
 }
 a.facebook:hover, a.facebook:focus {
@@ -303,4 +309,8 @@ a.email:hover, a.email:focus {
 }
 a.phone:hover, a.phone:focus {
     color: #28a745;
+}
+
+.footer {
+  background: #343a40;
 }
