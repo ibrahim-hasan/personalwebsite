@@ -88,55 +88,83 @@
               </div>
             </div>
           </section>
-          <section class="services">
+          <section class="services section feature-box">
             <div class="container">
-              <div class="row">
-                <div class="col-8">
-                  <p class="text-center">Here you can see the services I can provide you.</p>
-                </div>
+              <!--Section heading-->
+              <h1 class="section-heading pt-4">Why is it so great?</h1>
+              <!--Section description-->
+              <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+              <!--Grid row-->
+              <div class="row features-big">
+
+                  <!--Grid column-->
+                  <div class="col-md-4 mb-r">
+                    <div class="service-heading">
+                      <i class="fa fa-area-chart red-text"></i>
+                      <h5 class="feature-title">Analytics</h5>
+                    </div>
+                      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-4 mb-r">
+                    <div class="service-heading">
+                      <i class="fa fa-book cyan-text"></i>
+                      <h5 class="feature-title">Tutorials</h5>
+                    </div>
+                      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-4 mb-r">
+                    <div class="service-heading">
+                      <i class="fa fa-coffee orange-text"></i>
+                      <h5 class="feature-title">Relax</h5>
+                    </div>
+                      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                  </div>
+                  <!--Grid column-->
+
               </div>
+              <!--Grid row-->
             </div>
           </section>
           <section class="projects">
             <div class="container">
-              <div class="row">
-                <div class="col-8">
-                  <p class="text-center">I am available. I would be happy to discuss possible work!</p>
-                </div>
-              </div>
+
             </div>
           </section>
           <!--Footer-->
         <footer class="footer">
-            <div class="socials container">
-                <div class="row">
-                    <div class="col-md">
-                        <div class="mb-5">
-                          <ul class="socials">
-                            <!--Facebook-->
-                            <li class="list-item"><a class="facebook" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
-                            <!--Skype-->
-                            <li class="list-item"><a class="skype" href="tel: (+90) 531 959 1332"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></li>
-                            <!--Linkedin-->
-                            <li class="list-item"><a class="linkedin" href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin-square fa-2x"> </i></a></li>
-                            <!--Email-->
-                            <li class="list-item"><a class="email" href="mailto: ibrahim_hasan_eng@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                            <!--Phone Number-->
-                            <li class="list-item"><a class="phone" href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a></li>
-                          </ul>
-                        </div>
-                    </div>
+          <div class="socials container">
+            <div class="row">
+              <div class="col-md">
+                <div class="mb-5">
+                  <ul class="socials">
+                    <!--Facebook-->
+                    <li class="list-item"><a class="facebook" href="https://www.facebook.com/ibrahimhasan1990" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a></li>
+                    <!--Skype-->
+                    <li class="list-item"><a class="skype" href="tel: (+90) 531 959 1332"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></li>
+                    <!--Linkedin-->
+                    <li class="list-item"><a class="linkedin" href="https://tr.linkedin.com/in/ibrahim-hasan-9a0b24121" target="_blank"><i class="fa fa-linkedin-square fa-2x"> </i></a></li>
+                    <!--Email-->
+                    <li class="list-item"><a class="email" href="mailto: ibrahim_hasan_eng@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                    <!--Phone Number-->
+                    <li class="list-item"><a class="phone" href="tel: (+90) 531 959 1332"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
-
-            <!--Copyright-->
-            <div class="footer-copyright">
-                <p class="copyright text-center">
-                  Copyright &copy; 2018 by Ibrahim Hasan. All Rights Reserved.
-                </p>
-            </div>
-            <!--/Copyright-->
-
+          </div>
+          <!--Copyright-->
+          <div class="footer-copyright">
+              <p class="copyright text-center">
+                Copyright &copy; 2018 by Ibrahim Hasan. All Rights Reserved.
+              </p>
+          </div>
         </footer>
         <!--/Footer-->
       <!-- Header Shrinks On Scroll -->

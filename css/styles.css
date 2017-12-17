@@ -7,12 +7,11 @@ height: 100%;
 body {
 font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 background: #42807d;
-color: #fff;
 line-height: 1.2;
 }
 
 section, header {
-  min-height: 630px
+  min-height: 630px;
 }
 
 a {
@@ -30,7 +29,7 @@ font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 p {
-font-size: 16px;
+font-size: 20px;
 line-height: 1.5;
 margin-bottom: 20px;
 }
@@ -267,12 +266,14 @@ header {
 }
 
 .services {
-  background-color: #e6e5e5;
-  color: #256b7b
+  background-color: #eee;
+  height: auto !important;
+  padding: 100px;
+  text-align: center;
 }
 .projects {
   background-color: #7d7e80;
-  color: white;
+  color: black;
 }
 .badge, .btn, .btn-primary.active:not([disabled]):not(.disabled), .btn-primary:not([disabled]):not(.disabled):active, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .show>.btn-primary.dropdown-toggle, .z-depth-1 {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -312,5 +313,32 @@ a.phone:hover, a.phone:focus {
 }
 
 .footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: #343a40;
+}
+
+.service-heading {
+  text-align: center;
+  margin: 25px 0 10px 0;
+}
+
+.red-text,
+.cyan-text,
+.orange-text {
+  font-size: 72px;
+  padding-bottom: 20px;
+}
+
+.red-text {
+  color: red;
+}
+
+.cyan-text {
+  color: cyan;
+}
+
+.orange-text {
+  color: orange;
 }
