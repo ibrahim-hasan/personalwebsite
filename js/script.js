@@ -41,8 +41,8 @@ document.scroll(
           $.smoothScroll( {scrollTarget: target} );
     });
 
-  $('.btn-projects').on('click', function() {
-          target = '#projects';
+  $('.btn-services').on('click', function() {
+          target = '#services';
           $.smoothScroll( {scrollTarget: target} );
     });
 

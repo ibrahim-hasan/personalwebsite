@@ -12,7 +12,7 @@
   <!-- fontAwesome for Text Icons -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <!-- Google Font for Brand Name -->
-  <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Open+Sans:400,400i,600,800" rel="stylesheet">
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Animate.css javascript Plugin -->
@@ -21,36 +21,38 @@
   <body data-spy="scroll" data-target="#navbar">
     <header>
       <nav id="navbar" class="navbar-transparent navbar navbar-expand-md navbar-dark animated fadeIn">
-        <a class="navbar-brand animated pulse infinite" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+          <a class="navbar-brand animated pulse infinite d-sm-block d-none" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li id="onHome" class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li id="onAboutMe" class="nav-item">
-              <a class="nav-link" href="#aboutMe">About Me</a>
-            </li>
-            <li id="onServices" class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li id="onProjects" class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </div><!-- End of Collapse -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li id="onHome" class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li id="onAboutMe" class="nav-item">
+                <a class="nav-link" href="#aboutMe">About Me</a>
+              </li>
+              <li id="onServices" class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li id="onProjects" class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+          </div><!-- End of Collapse -->
+        </div>
       </nav>
     </header>
 
-    <section id="home" class="header masthead text-center">
+    <section id="home" class="header container-fluid d-flex align-items-center justify-content-center">
       <div class="row">
-        <div class="col-lg-12 center">
-          <h1 class="display-3">Ibrahim Hasan</h1>
+        <div class="col-lg-12">
+          <h1 class="my-name display-3">Ibrahim Hasan</h1>
           <hr>
-          <p class="lead">
+          <p class="lead text-center">
             Thank you for visiting my website. Please continue your journey.
             I promise you, you will not regret it!</p>
           <br>
@@ -61,14 +63,14 @@
 
       <section id="aboutMe" class="about-me d-flex align-items-center py-5 py-lg-0">
         <div class="container">
-          <div class="row justify-content-center align-items-stretch">
-            <div class="col-lg-4 col-6 main-image pb-3">
+          <div class="row justify-content-around align-items-center">
+            <div class="col-lg-4 col-6 main-image mt-5 mt-lg-0 pb-3">
                 <img class="img-fluid img-thumbnail d-lg-block d-none" src="img/ibrahimhasan.JPG" alt="Personal Photo">
                 <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="img/ibrahimhasan-rounded.JPG" alt="Personal Photo">
             </div>
-            <div class="col-lg-7 col-12">
-              <h1 class="display-3">Who am I?</h1>
-              <p class="lead">Here is some background information about me: I am Ibrahim from Syria.
+            <div class="row col-lg-7 col-12">
+              <h1 class="section-heading text-light">Who am I?</h1>
+              <p class="lead text-light text-justify">Here is some background information about me: I am Ibrahim from Syria.
               I am a mechatronics engineer, graduated in 2015.
               I have an ambition, and in order to fulfill it, I have to work hard, think smart,
               and improve myself. My mother tongue is Arabic, and I am fluent in English.
@@ -77,17 +79,17 @@
               using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end
               web development needs to be broadened, thus I am learning PHP.</p>
               <hr>
-              <p>Learn more about
-                <a class="btn btn-outline-warning btn-projects" href="#" role="button">My Projects</a>
-              </p>
+              <div class="col-12 text-center">
+                <a class="btn btn-outline-warning btn-services" href="#" role="button">Click me for more!</a>
+              </div><!-- End of Column -->
             </div><!-- End of Column -->
           </div><!-- End of Row -->
         </div><!-- End of Container -->
       </section>
       <section id="services" class="services feature-box d-flex align-items-center py-5 py-lg-0">
         <div class="container">
-          <h1 class="section-heading">Why is it so great?</h1>
-          <p class="section-description lead grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <h1 class="section-heading mt-5 mt-lg-0">What can I do for you?</h1>
+          <p class="section-description lead mr-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <!--Grid row-->
           <div class="row">
               <!--Grid column-->
