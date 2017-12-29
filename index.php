@@ -50,13 +50,14 @@
     <section id="home" class="header container-fluid d-flex align-items-center justify-content-center">
       <div class="row">
         <div class="col-lg-12">
+          <span class="occupation text-center">Mechatronics Engineer & Web Developer</span>
           <h1 class="my-name display-3">Ibrahim Hasan</h1>
           <hr>
           <p class="lead text-center">
             Thank you for visiting my website. Please continue your journey.
             I promise you, you will not regret it!</p>
           <br>
-          <a class="btn btn-outline-info btn-about" href="#aboutMe">Want to know me more?</a>
+          <a class="btn btn-outline-info btn-lg btn-about" href="#aboutMe">Want to know me more?</a>
         </div><!-- End of Column -->
       </div><!-- End of Row -->
     </section><!-- End of Section -->
@@ -70,7 +71,7 @@
             </div>
             <div class="row col-lg-7 col-12">
               <h1 class="section-heading text-light">Who am I?</h1>
-              <p class="lead text-light text-justify">Here is some background information about me: I am Ibrahim from Syria.
+              <p class="summary text-light text-justify">Here is some background information about me: I am Ibrahim from Syria.
               I am a mechatronics engineer, graduated in 2015.
               I have an ambition, and in order to fulfill it, I have to work hard, think smart,
               and improve myself. My mother tongue is Arabic, and I am fluent in English.
@@ -96,9 +97,9 @@
               <div class="col-lg-4">
                 <div class="service-heading">
                   <i class="fa fa-area-chart red-text"></i>
-                  <h5 class="feature-title">Analytics</h5>
+                  <h5 class="feature-title font-weight-bold">Analytics</h5>
                 </div>
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
               </div>
               <!--Grid column-->
 
@@ -106,9 +107,9 @@
               <div class="col-lg-4">
                 <div class="service-heading">
                   <i class="fa fa-book cyan-text"></i>
-                  <h5 class="feature-title">Tutorials</h5>
+                  <h5 class="feature-title font-weight-bold">Tutorials</h5>
                 </div>
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
               </div>
               <!--Grid column-->
 
@@ -116,9 +117,9 @@
               <div class="col-lg-4">
                 <div class="service-heading">
                   <i class="fa fa-coffee orange-text"></i>
-                  <h5 class="feature-title">Relax</h5>
+                  <h5 class="feature-title font-weight-bold">Relax</h5>
                 </div>
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
               </div>
               <!--Grid column-->
           </div>

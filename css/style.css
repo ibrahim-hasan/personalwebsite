@@ -28,13 +28,12 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 hr {
-  max-width: 60%;
-  border-width: 2px;
-  border-color: rgba(255, 255, 255, 0.3);
+  max-width: 50%;
+  border-width: 3px;
+  border-color: rgba(2, 145, 140, 0.5);
 }
 
 a {
@@ -152,17 +151,22 @@ a:hover, a:focus {
 * Customizing the default Info Button.
 */
 
+.btn {
+  border-radius: 0;
+}
+
 .btn-outline-info,
 .btn-outline-warning {
-  color: #fff !important; /* '!improtant' is necessary to overwrite the Bootstrap color property. */
-  border-color: #fff;
+  color: #fff !important;
+  border: 2px solid #fff;
 }
 
 .btn-outline-info:hover {
-  border-color: #58a3b5;
+  background-color: #02918c !important;
+  border-color: #02918c !important;
 }
 
-.btn, .btn-primary, .btn-primary:active, .page-link, .z-depth-1 {
+.btn, .page-link, .z-depth-1 {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
               0 2px 10px 0 rgba(0,0,0,.12);
 }
@@ -188,6 +192,14 @@ a:hover, a:focus {
   background-color: rgba(0, 0, 0, 0.66);
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.occupation {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 0;
 }
 
 .my-name {
@@ -230,6 +242,10 @@ a:hover, a:focus {
 
 .service-heading {
   text-align: center;
+}
+
+.feature-title {
+  color: #02918c;
 }
 
 .red-text,
@@ -339,5 +355,22 @@ a.phone:focus {
   .services,
   .projects {
     height: auto !important; /* Solves the height of the container div not extending with its content */
+  }
+
+  .my-name {
+    letter-spacing: 5px;
+    font-size: 40px;
+    margin-top: .5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .occupation {
+    letter-spacing: normal;
+    line-height: 1.2;
+  }
+
+  .summary {
+    text-align: center !important;
   }
 }
