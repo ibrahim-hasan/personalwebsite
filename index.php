@@ -151,7 +151,7 @@
         </div><!-- End of Container -->
         <!--Copyright-->
         <div class="footer-copyright">
-            <p class="copyright text-center">
+            <p class="copyright text-center text-light">
               Copyright &copy; 2018 by Ibrahim Hasan. All Rights Reserved.
             </p>
         </div><!-- End of Copyright -->
