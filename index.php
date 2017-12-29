@@ -47,7 +47,7 @@
       </nav>
     </header>
 
-    <section id="home" class="header container-fluid d-flex align-items-center justify-content-center">
+    <section id="home" class="header calc-height container-fluid d-flex align-items-center justify-content-center">
       <div class="row">
         <div class="col-lg-12">
           <span class="occupation text-center">Mechatronics Engineer & Web Developer</span>
@@ -62,7 +62,7 @@
       </div><!-- End of Row -->
     </section><!-- End of Section -->
 
-      <section id="aboutMe" class="about-me d-flex align-items-center py-5 py-lg-0">
+      <section id="aboutMe" class="about-me calc-height d-flex align-items-center py-5 py-lg-0">
         <div class="container">
           <div class="row justify-content-around align-items-center">
             <div class="col-lg-4 col-6 main-image mt-5 mt-lg-0 pb-3">
@@ -87,7 +87,7 @@
           </div><!-- End of Row -->
         </div><!-- End of Container -->
       </section>
-      <section id="services" class="services feature-box d-flex align-items-center py-5 py-lg-0">
+      <section id="services" class="services calc-height feature-box d-flex align-items-center py-5 py-lg-0">
         <div class="container">
           <h1 class="section-heading mt-5 mt-lg-0">What can I do for you?</h1>
           <p class="section-description lead mr-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -126,8 +126,68 @@
           <!--Grid row-->
         </div><!-- End of Container -->
       </section>
-      <section id="projects" class="projects">
-        <div class="container">
+      <section id="projects" class="projects container-fluid clearfix">
+        <div class="row no-gutter">
+
+          <div class="project col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h1>Project 1</h1>
+        				<p><a href="#">LINK HERE</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h1>Project 2</h1>
+        				<p><a href="#">LINK HERE</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h1>Project 3</h1>
+        				<p><a href="#">LINK HERE</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h1>Project 4</h1>
+        				<p><a href="#">LINK HERE</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h1>Project 5</h1>
+        				<p><a href="#">LINK HERE</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
+              <div class="overlay">
+                <h1>Project 6</h1>
+        				<p><a href="#">LINK HERE</a></p>
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>

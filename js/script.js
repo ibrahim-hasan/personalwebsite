@@ -48,7 +48,7 @@ document.scroll(
 
   function sectionHeight() {
     "use strict";
-    $("section").height($(window).height());
+    $(".calc-height").height($(window).height());
   }
 
 
