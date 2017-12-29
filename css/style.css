@@ -189,7 +189,7 @@ a:hover, a:focus {
   background-blend-mode: color;
   width: 100%;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
