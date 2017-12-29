@@ -66,8 +66,8 @@
         <div class="container">
           <div class="row justify-content-around align-items-center">
             <div class="col-lg-4 col-6 main-image mt-5 mt-lg-0 pb-3">
-                <img class="img-fluid img-thumbnail d-lg-block d-none" src="/img/ibrahimhasan.JPG" alt="Personal Photo">
-                <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="/img/ibrahimhasan-rounded.JPG" alt="Personal Photo">
+                <img class="img-fluid img-thumbnail d-lg-block d-none" src="img/ibrahimhasan.jpg" alt="Personal Photo">
+                <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="img/ibrahimhasan-rounded.jpg" alt="Personal Photo">
             </div>
             <div class="row col-lg-7 col-12">
               <h1 class="section-heading text-light">Who am I?</h1>
