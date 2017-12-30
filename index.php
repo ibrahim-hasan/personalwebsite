@@ -16,7 +16,7 @@
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Animate.css javascript Plugin -->
-  <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="vendor/animate-css/animate.css">
   </head>
   <body data-spy="scroll" data-target="#navbar">
     <header>
