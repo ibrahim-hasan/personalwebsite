@@ -131,61 +131,73 @@
 
           <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
-              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h1>Project 1</h1>
-        				<p><a href="#">LINK HERE</a></p>
-              </div>
+              <a href="#" class="finished-project">
+                <img class="" src="img/projects/project-1.jpg" alt="">
+                <div class="overlay">
+                  <h1>My Personal Website</h1>
+          				<p>HTML, CSS, Bootstrap, jQuery, Smooth Scroll, Animate.js, Wow.js, PHP</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
-              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h1>Project 2</h1>
-        				<p><a href="#">LINK HERE</a></p>
-              </div>
+              <a href="#" class="unfinished-project">
+                <img class="img-fluid" src="img/projects/project-2.jpg" alt="">
+                <div class="overlay">
+                  <h1>Project 2</h1>
+          				<p>Description Here.</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
-              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h1>Project 3</h1>
-        				<p><a href="#">LINK HERE</a></p>
-              </div>
+              <a href="#" class="unfinished-project">
+                <img class="img-fluid" src="img/projects/project-3.jpg" alt="">
+                <div class="overlay">
+                  <h1>Project 3</h1>
+          				<p>Description Here.</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
-              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h1>Project 4</h1>
-        				<p><a href="#">LINK HERE</a></p>
-              </div>
+              <a href="#" class="unfinished-project">
+                <img class="img-fluid" src="img/projects/project-4.jpg" alt="">
+                <div class="overlay">
+                  <h1>Project 4</h1>
+          				<p>Description Here.</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
-              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h1>Project 5</h1>
-        				<p><a href="#">LINK HERE</a></p>
-              </div>
+              <a href="#" class="unfinished-project">
+                <img class="img-fluid" src="img/projects/project-5.jpg" alt="">
+                <div class="overlay">
+                  <h1>Project 5</h1>
+          				<p>Description Here.</p>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
-              <img class="img-fluid" src="http://placehold.it/350x200" alt="">
-              <div class="overlay">
-                <h1>Project 6</h1>
-        				<p><a href="#">LINK HERE</a></p>
-              </div>
+              <a href="#" class="unfinished-project">
+                <img class="img-fluid" src="img/projects/project-6.jpg" alt="">
+                <div class="overlay">
+                  <h1>Project 6</h1>
+          				<p>Description Here.</p>
+                </div>
+              </a>
             </div>
           </div>
 
