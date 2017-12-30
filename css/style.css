@@ -298,7 +298,7 @@ a:hover, a:focus {
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .hovereffect img {
@@ -326,11 +326,11 @@ a:hover, a:focus {
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 30px;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
   overflow: hidden;
-  padding: 0.5em 0;
   background-color: transparent;
 }
 
@@ -355,7 +355,7 @@ a:hover, a:focus {
 
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  font-size: 26px;
+  font-size: 20px;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -439,7 +439,22 @@ a.phone:focus {
 *
 */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 576px) {
+  .occupation {
+    letter-spacing: normal;
+    line-height: 1.2;
+  }
+
+  .summary {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
   .about-me,
   .services,
   .projects {
@@ -450,16 +465,5 @@ a.phone:focus {
     letter-spacing: 5px;
     font-size: 40px;
     margin-top: .5rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .occupation {
-    letter-spacing: normal;
-    line-height: 1.2;
-  }
-
-  .summary {
-    text-align: center !important;
   }
 }

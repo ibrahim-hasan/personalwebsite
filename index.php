@@ -129,7 +129,7 @@
       <section id="projects" class="projects container-fluid clearfix">
         <div class="row no-gutter">
 
-          <div class="project col-md-4 col-sm-6 col-xs-12">
+          <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
               <img class="img-fluid" src="http://placehold.it/350x200" alt="">
               <div class="overlay">
@@ -139,7 +139,7 @@
             </div>
           </div>
 
-          <div class="project col-md-4 col-sm-6 col-xs-12">
+          <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
               <img class="img-fluid" src="http://placehold.it/350x200" alt="">
               <div class="overlay">
@@ -149,7 +149,7 @@
             </div>
           </div>
 
-          <div class="project col-md-4 col-sm-6 col-xs-12">
+          <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
               <img class="img-fluid" src="http://placehold.it/350x200" alt="">
               <div class="overlay">
@@ -159,7 +159,7 @@
             </div>
           </div>
 
-          <div class="project col-md-4 col-sm-6 col-xs-12">
+          <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
               <img class="img-fluid" src="http://placehold.it/350x200" alt="">
               <div class="overlay">
@@ -169,7 +169,7 @@
             </div>
           </div>
 
-          <div class="project col-md-4 col-sm-6 col-xs-12">
+          <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
               <img class="img-fluid" src="http://placehold.it/350x200" alt="">
               <div class="overlay">
@@ -179,7 +179,7 @@
             </div>
           </div>
 
-          <div class="project col-md-4 col-sm-6 col-xs-12">
+          <div class="project col-lg-4 col-md-6 col-sm-12">
             <div class="hovereffect">
               <img class="img-fluid" src="http://placehold.it/350x200" alt="">
               <div class="overlay">
