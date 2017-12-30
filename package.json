@@ -1,0 +1,45 @@
+{
+    "title": "Ibrahim Hasan's Personal Website",
+    "name": "mypersonalwebsite",
+    "version": "1.0.0",
+    "description": "This is my personal website, developed by me.",
+    "main": "index.php",
+    "scripts": {
+        "start": "browser-sync start"
+    },
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "jquery",
+        "bootstrap"
+    ],
+    "homepage": "https://ibrahimhasan-engineer.herokuapp.com",
+    "bugs": {
+        "url": "https://github.com/IbrahimHasanEng/ibrahimhasan/issues",
+        "email": "ibrahim_hasan_eng@hotmail.com"
+    },
+    "license": "MIT",
+    "author": "Ibrahim Hasan",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/IbrahimHasanEng/ibrahimhasan.git"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-beta.2",
+        "font-awesome": "4.7.0",
+        "jquery": "^3.2.1",
+        "animate.css": "3.5.2",
+        "jquery-smooth-scroll": "2.2.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "3.0.0"
+    }
+}

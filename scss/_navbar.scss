@@ -1,0 +1,70 @@
+// Styling for the navbar
+
+
+/**
+*
+* Navigation Bar
+*
+*/
+
+.navbar-brand {
+  font-family: 'Kaushan Script', 'Courgette';
+  color: #fff;
+}
+
+/* Default Navbar Style (appears after scrolling up): */
+
+.bg-dark {
+  position: fixed;
+  width:100%;
+  top: 0;
+  z-index: 1020;
+  background-color: #02918c !important;
+  border-bottom: 3px solid #cfc91d;
+}
+
+.bg-dark .navbar-brand {
+  font-size: 30px;
+}
+
+.bg-dark .navbar-nav>li>a {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*
+* Transparent Navbar Style (appears before scrolling):
+*/
+
+.navbar-transparent {
+  position: fixed;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  width:100%;
+  top: 0;
+  z-index: 1020;
+}
+
+.navbar-transparent .navbar-brand {
+  font-size: 40px;
+}
+
+.navbar-transparent .navbar-nav>li>a {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+#navbar-brand { /* The duration of the animation of the navbar-brand */
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+}
+
+.nav-link {
+  margin: 0 3px; /* Adding some space between navigation menu items. */
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}

@@ -1,0 +1,74 @@
+// Global styling
+
+
+/**
+*
+* Global Styling
+*
+*/
+
+html,
+body {
+width: 100%;
+height: 100%;
+}
+
+body {
+font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+background: #42807d;
+line-height: 1.2;
+position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+hr {
+  max-width: 50%;
+  border-width: 3px;
+  border-color: rgba(2, 145, 140, 0.5);
+}
+
+a {
+  color: #fff;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+a:hover, a:focus {
+  color: #256b7b;
+}
+
+/* I included this to only customize the height of specific sections by JavaScript, this would be the minimum value. */
+.calc-height {
+  min-height: 630px;
+}
+
+/**
+*
+* Custom Scrollbar
+*
+*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

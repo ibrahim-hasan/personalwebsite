@@ -1,0 +1,39 @@
+// Styling for About Me section
+
+
+/**
+* About Me Section
+*/
+
+.about-me {
+  background: #02918c;
+
+}
+
+.main-image img
+{
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+
+/**
+*
+* Media Queries
+*
+*/
+
+@media screen and (max-width: 576px) {
+  .summary {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+  .about-me {
+    height: auto !important; /* Solves the height of the container div not extending with its content */
+  }
+}

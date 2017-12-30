@@ -1,0 +1,63 @@
+// Styling for the footer
+
+
+/**
+* Footer
+*/
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #343a40;
+}
+
+.socials {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.socials ul {
+  padding: 0;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.socials ul li {
+  padding: 5px;
+  margin: 0 10px 0 10px;
+  display: inline-block
+}
+
+.copyright {
+  margin: 0;
+  background-color: #02918c;
+  font-size: 14px;
+}
+
+a.facebook:hover,
+a.facebook:focus {
+  color: #3b5998;
+}
+
+a.skype:hover,
+a.skype:focus {
+  color: #12A5F4;
+}
+
+a.linkedin:hover,
+a.linkedin:focus {
+  color: #007bb5;
+}
+
+a.email:hover,
+a.email:focus {
+  color: #dc3545;
+}
+
+a.phone:hover,
+a.phone:focus {
+  color: #28a745;
+}

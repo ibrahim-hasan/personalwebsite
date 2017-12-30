@@ -1,0 +1,59 @@
+// Styling for Services section
+
+
+/**
+* Services Section
+*/
+
+.services {
+  background-color: #eee;
+  text-align: center;
+}
+
+.service-heading {
+  text-align: center;
+}
+
+.feature-title {
+  color: #02918c;
+}
+
+.red-text,
+.cyan-text,
+.orange-text {
+  font-size: 72px;
+  padding-bottom: 20px;
+}
+
+.red-text {
+  color: red;
+}
+
+.cyan-text {
+  color: cyan;
+}
+
+.orange-text {
+  color: orange;
+}
+
+
+/**
+*
+* Media Queries
+*
+*/
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+  .services {
+    height: auto !important; /* Solves the height of the container div not extending with its content */
+  }
+}
