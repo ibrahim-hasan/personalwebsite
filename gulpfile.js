@@ -65,7 +65,7 @@ gulp.task('copy', function() {
   gulp.src(['node_modules/animate.css/animate.min.css'])
     .pipe(gulp.dest('vendor/animate.css'))
 
-  gulp.src(['node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js'])
+  gulp.src(['node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js'])
     .pipe(gulp.dest('vendor/jquery-smooth-scroll'))
 
   gulp.src(['node_modules/font-awesome/**/font-awesome.min.css', 'node_modules/font-awesome/**/fontawesome-webfont.*'])
