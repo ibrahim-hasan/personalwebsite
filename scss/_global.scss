@@ -1,6 +1,3 @@
-// Global styling
-
-
 /**
 *
 * Global Styling
@@ -9,15 +6,15 @@
 
 html,
 body {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-background: #42807d;
-line-height: 1.2;
-position: relative;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  background: $secondary;
+  line-height: 1.2;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,9 +27,7 @@ p {
 }
 
 hr {
-  max-width: 50%;
-  border-width: 3px;
-  border-color: rgba(2, 145, 140, 0.5);
+  @include hr();
 }
 
 a {
@@ -40,15 +35,21 @@ a {
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
   transition: all .2s;
-}
-
-a:hover, a:focus {
-  color: #256b7b;
+  &:hover,
+  &:focus, {
+    color: #256b7b;
+  }
 }
 
 /* I included this to only customize the height of specific sections by JavaScript, this would be the minimum value. */
 .calc-height {
   min-height: 630px;
+}
+
+.section-heading {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 /**

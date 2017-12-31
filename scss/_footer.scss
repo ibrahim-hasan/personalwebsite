@@ -9,55 +9,57 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #343a40;
-}
+  background: $grey-5;
+  color: $white;
 
-.socials {
-  list-style-type: none;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-}
+  .socials {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
 
-.socials ul {
-  padding: 0;
-  padding-top: 1rem;
-  text-align: center;
-}
+    ul {
+      padding: 0;
+      padding-top: 1rem;
+      text-align: center;
 
-.socials ul li {
-  padding: 5px;
-  margin: 0 10px 0 10px;
-  display: inline-block
-}
+      li {
+        padding: 5px;
+        margin: 0 10px 0 10px;
+        display: inline-block;
 
-.copyright {
-  margin: 0;
-  background-color: #02918c;
-  font-size: 14px;
-}
+        .facebook:hover,
+        .facebook:focus {
+          color: $facebook;
+        }
 
-a.facebook:hover,
-a.facebook:focus {
-  color: #3b5998;
-}
+        .skype:hover,
+        .skype:focus {
+          color: $skype;
+        }
 
-a.skype:hover,
-a.skype:focus {
-  color: #12A5F4;
-}
+        .linkedin:hover,
+        .linkedin:focus {
+          color: $linkedin;
+        }
 
-a.linkedin:hover,
-a.linkedin:focus {
-  color: #007bb5;
-}
+        .email:hover,
+        .email:focus {
+          color: $email;
+        }
 
-a.email:hover,
-a.email:focus {
-  color: #dc3545;
-}
+        .phone:hover,
+        .phone:focus {
+          color: $whatsapp;
+        }
+      }
+    }
+  }
 
-a.phone:hover,
-a.phone:focus {
-  color: #28a745;
+  .copyright p {
+    margin: 0;
+    background-color: $secondary;
+    color: $grey-5;
+    font-size: 14px;
+  }
 }

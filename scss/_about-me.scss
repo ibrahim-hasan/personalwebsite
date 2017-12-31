@@ -6,15 +6,13 @@
 */
 
 .about-me {
-  background: #02918c;
+  background: $primary;
 
+  img
+  {
+  	box-shadow: 0 4px 6px $blackTran-2;
+  }
 }
-
-.main-image img
-{
-	box-shadow: 0 4px 6px rgba(0,0,0,.3);
-}
-
 
 /**
 *
@@ -24,7 +22,7 @@
 
 @media screen and (max-width: 576px) {
   .summary {
-    text-align: center !important;
+    font-size: 18px;
   }
 }
 
@@ -34,6 +32,6 @@
 
 @media screen and (max-width: 992px) {
   .about-me {
-    height: auto !important; /* Solves the height of the container div not extending with its content */
+    height: auto !important; /* Solves the height of the container div not extending with its content on small devices */
   }
 }

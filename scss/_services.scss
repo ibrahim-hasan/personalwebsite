@@ -6,35 +6,17 @@
 */
 
 .services {
-  background-color: #eee;
+  background-color: $secondary;
   text-align: center;
-}
+  color: $primary;
 
-.service-heading {
-  text-align: center;
-}
+  .service-heading {
+    text-align: center;
+  }
 
-.feature-title {
-  color: #02918c;
-}
-
-.red-text,
-.cyan-text,
-.orange-text {
-  font-size: 72px;
-  padding-bottom: 20px;
-}
-
-.red-text {
-  color: red;
-}
-
-.cyan-text {
-  color: cyan;
-}
-
-.orange-text {
-  color: orange;
+  .feature-title {
+    color: $primary;
+  }
 }
 
 
@@ -54,6 +36,6 @@
 
 @media screen and (max-width: 992px) {
   .services {
-    height: auto !important; /* Solves the height of the container div not extending with its content */
+    height: auto !important;
   }
 }

@@ -1,15 +1,56 @@
 // Variables
 
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
 
-$primary: #F05F40 !default;
+// Colors
+
+// General Colors
+$primary              : #02918c;
+$secondary            : #eeeeee;
+$decoration           : #cfc91d;
+
+// Different Degree Transparency for Black Color
+$blackTran-1          : rgba(0, 0, 0, 0.4);
+$blackTran-2          : rgba(0, 0, 0, 0.6);
+$blackTran-3          : rgba(0, 0, 0, 0.8);
+$black                : #000000;
+
+// Different Degree Transparency for White Color
+$whiteTran-1          : rgba(255, 255, 255, 0.3);
+$whiteTran-2          : rgba(255, 255, 255, 0.5);
+$whiteTran-3          : rgba(255, 255, 255, 0.8);
+$white                : #ffffff;
+
+// Different Grey Color Levels
+$grey-1               : #eeeeee;
+$grey-2               : #cccccc;
+$grey-3               : #999999;
+$grey-4               : #666666;
+$grey-5               : #333333;
+
+
+// On Scroll Navigation Bar Colors
+$navMain              : $primary !important;
+$navBorder            : $decoration;
+$navBrand             : $white;
+$navBrandHover        : $white;
+$navLink              : $whiteTran-2 !important;
+$navLinkHover         : $whiteTran-3 !important;
+$navLinkActive        : $white !important;
+
+// Transparent Navigation Bar Colors
+$navMainTrans         : transparent !important;
+$navBorderTrans       : $whiteTran-1;
+$navBrandTrans        : $white;
+$navBrandTransHover   : $white;
+$navLinkTrans         : $whiteTran-2 !important;
+$navLinkTransHover    : $whiteTran-3 !important;
+$navLinkTransActive   : $white !important;
+
+$hr                   : $primary;
+
+// Social Media Colors
+$facebook             : #3b5998;
+$skype                : #12A5F4;
+$linkedin             : #007bb5;
+$email                : #dc3545;
+$whatsapp             : #28a745;

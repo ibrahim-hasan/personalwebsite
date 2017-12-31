@@ -1,18 +1,71 @@
 // Mixins
-@mixin transition-all() {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+@mixin transition(
+$property: all,
+$duration: 0.35s) {
+
+  -webkit-transition: $property $duration;
+  -moz-transition: $property $duration;
+  -o-transition: $property $duration;
+  transition: $property $duration;
 }
-@mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+@mixin transform3d(
+$x: 0,
+$y: 0,
+$z: 0) {
+
+  -webkit-transform: translate3d($x, $y, $z);
+  -moz-transform: translate3d($x, $y, $z);
+  -o-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
 }
-@mixin serif-font() {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+
+@mixin background-image(
+$url: url(../img/header.jpg),
+$size: cover, $repeat: no-repeat,
+$position: center center,
+$color: $blackTran-2,
+$blendMode: color ) {
+
+  background-image: $url;
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+  background-color: $color;
+  background-blend-mode: $blendMode;
 }
-@mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+@mixin animate(
+$duration: 1.5s,
+$delay: 0s,
+$iteration: infinite) {
+
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -ms-animation-duration: $duration;
+  -o-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -ms-animation-delay: $delay;
+  -o-animation-delay: $delay;
+  animation-delay: $delay;
+  -webkit-animation-iteration-count: $iteration;
+  -moz-animation-iteration-count: $iteration;
+  -ms-animation-iteration-count: $iteration;
+  -o-animation-iteration-count: $iteration;
+  animation-iteration-count: $iteration;
+}
+
+@mixin hr(
+$width: 50%,
+$borderWidth: 3px,
+$borderColor: rgba(2, 145, 140, 0.5)) {
+
+  max-width: $width;
+  border-width: $borderWidth;
+  border-color: $borderColor;
 }

@@ -33,7 +33,11 @@ document.scroll(
           target = '#home';
     }
 
-    $.smoothScroll( {scrollTarget: target} );
+    $.smoothScroll( {
+      scrollTarget: target,
+      easing: 'swing',
+      speed: 700
+    } );
   });
 
   $('.btn-about').on('click', function() {
@@ -55,7 +59,7 @@ document.scroll(
   function navOnScroll() {
     if(document.scrollTop() > 100) {
 
-      navbar.addClass('bg-dark fixed');
+      navbar.addClass('navbar-default fixed');
       navbar.removeClass('navbar-transparent');
 
       navbar.addClass('fadeInDown');
@@ -63,7 +67,7 @@ document.scroll(
     } else {
 
       navbar.addClass('navbar-transparent');
-      navbar.removeClass('bg-dark fixed');
+      navbar.removeClass('navbar-default fixed');
 
       navbar.removeClass('fadeInDown');
 
