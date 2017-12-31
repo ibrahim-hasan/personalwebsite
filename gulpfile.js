@@ -53,23 +53,23 @@ gulp.task('minify-js', function() {
     }))
 });
 
-// Copy vendor files from /node_modules into /vendor
+// Copy src files from /node_modules into /src
 // NOTE: requires `npm install` before running!
 gulp.task('copy', function() {
   gulp.src(['node_modules/bootstrap/dist/**/bootstrap.min.css', 'node_modules/bootstrap/dist/**/bootstrap.min.js'])
-    .pipe(gulp.dest('vendor/bootstrap'))
+    .pipe(gulp.dest('src/bootstrap'))
 
   gulp.src(['node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('vendor/jquery'))
+    .pipe(gulp.dest('src/jquery'))
 
   gulp.src(['node_modules/animate.css/animate.min.css'])
-    .pipe(gulp.dest('vendor/animate.css'))
+    .pipe(gulp.dest('src/animate.css'))
 
   gulp.src(['node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js'])
-    .pipe(gulp.dest('vendor/jquery-smooth-scroll'))
+    .pipe(gulp.dest('src/jquery-smooth-scroll'))
 
   gulp.src(['node_modules/font-awesome/**/font-awesome.min.css', 'node_modules/font-awesome/**/fontawesome-webfont.*'])
-    .pipe(gulp.dest('vendor/font-awesome'))
+    .pipe(gulp.dest('src/font-awesome'))
 });
 
 // Default task

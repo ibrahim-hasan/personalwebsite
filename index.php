@@ -8,15 +8,15 @@
   <!-- Different Title to Each Page -->
   <title>Home</title>
   <!-- Bootstrap Stylesheet CDN -->
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
   <!-- fontAwesome for Text Icons -->
-  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
   <!-- Google Font for Brand Name -->
   <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Open+Sans:400,400i,600,800" rel="stylesheet">
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Animate.css javascript Plugin -->
-  <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+  <link rel="stylesheet" href="src/animate.css/animate.min.css">
   </head>
   <body data-spy="scroll" data-target="#navbar">
     <header>
@@ -230,10 +230,10 @@
       </footer>
       <!--/Footer-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+    <script src="src/jquery/jquery.min.js"></script>
+    <script src="src/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
