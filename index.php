@@ -16,7 +16,7 @@
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Animate.css javascript Plugin -->
-  <link rel="stylesheet" href="vendor/animate-css/animate.css">
+  <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
   </head>
   <body data-spy="scroll" data-target="#navbar">
     <header>
@@ -231,7 +231,7 @@
       <!--/Footer-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
+    <script src="vendor/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
