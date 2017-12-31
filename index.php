@@ -14,7 +14,7 @@
   <!-- Google Font for Brand Name -->
   <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Open+Sans:400,400i,600,800" rel="stylesheet">
   <!-- My Custom Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <!-- Animate.css javascript Plugin -->
   <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
   </head>
@@ -234,6 +234,6 @@
     <script src="vendor/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
