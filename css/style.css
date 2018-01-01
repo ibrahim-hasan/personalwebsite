@@ -36,7 +36,7 @@ a {
 
 /* I included this to only customize the height of specific sections by JavaScript, this would be the minimum value. */
 .calc-height {
-  min-height: 550px; }
+  min-height: 500px; }
 
 .section-heading {
   font-family: 'Open Sans', sans-serif;
@@ -131,6 +131,24 @@ a {
   -ms-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 0; }
+    .navbar-nav .nav-item {
+      margin: 0 5px; } }
+
+@media screen and (max-width: 576px) {
+  .navbar .navbar-nav {
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 0; }
+    .navbar .navbar-nav .nav-item {
+      margin: 0 1px; } }
 
 /**
 * Head Section
@@ -403,7 +421,7 @@ a.unfinished-project:hover {
   margin: 0 auto; }
 
 .btn {
-  border-radius: 5px; }
+  border-radius: 0; }
 
 .btn-outline-primary {
   color: #02918c !important;

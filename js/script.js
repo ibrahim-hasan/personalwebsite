@@ -71,7 +71,7 @@ document.scroll(
   function navOnScroll() {
     if(document.scrollTop() > 100) {
 
-      navbar.addClass('navbar-default fixed');
+      navbar.addClass('navbar-default');
       navbar.removeClass('navbar-transparent');
 
       navbar.addClass('fadeInDown');

@@ -83,3 +83,36 @@
 #navbar-brand {
   @include animate();
 }
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 0;
+
+    .nav-item {
+      margin: 0 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    
+    .navbar-nav {
+      flex-direction: row;
+      margin: 0 auto;
+      margin-top: 10px;
+      padding-left: 0;
+
+      .nav-item {
+        margin: 0 1px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+}

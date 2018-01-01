@@ -27,7 +27,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto d-sm-flex flex-sm-row justify-content-center">
             <li id="onHome" class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -47,7 +47,7 @@
 
     <!-- Header -->
     <header id="home" class="header calc-height container-fluid d-flex align-items-center justify-content-center">
-      <div class="row">
+      <div class="row pt-5 pt-lg-0">
         <div class="col-lg-12">
           <span class="occupation text-center">Mechatronics Engineer & Web Developer</span>
           <h1 class="my-name display-3">Ibrahim Hasan</h1>
