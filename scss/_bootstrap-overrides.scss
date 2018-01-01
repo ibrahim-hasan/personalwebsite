@@ -1,23 +1,43 @@
 // Bootstrap overrides
 
+.row {
+  margin: 0 auto;
+}
+
 .btn {
-  border-radius: 0;
+  border-radius: 5px;
+}
+
+.btn-outline-primary {
+  color: $primary !important;
+  border: 2px solid $primary !important;
+  background-color: transparent !important;
+
+  &:hover,
+  &:focus {
+    color: $white !important;
+    border: 2px solid $primary !important;
+    background-color: $primary !important;
+    box-shadow: 0 0 0 0 $secondary !important;
+  }
+
+  &:active {
+    color: $white !important;
+    border: 2px solid $primary !important;
+    background-color: $primary !important;
+    box-shadow: 0 0 0 0.2rem $secondary !important;
+  }
 }
 
 .btn-outline-info,
 .btn-outline-warning {
   color: #fff !important;
-  border: 2px solid #fff;
+  border: 2px solid $white;
 }
 
 .btn-outline-info:hover {
-  background-color: #02918c !important;
-  border-color: #02918c !important;
-}
-
-.btn, .page-link, .z-depth-1 {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
-              0 2px 10px 0 rgba(0,0,0,.12);
+  background-color: $primary !important;
+  border-color: $primary !important;
 }
 
 /* Remove the gutter between columns in Boostrap. */

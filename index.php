@@ -18,7 +18,7 @@
   <!-- Animate.css javascript Plugin -->
   <link rel="stylesheet" href="src/animate.css/animate.min.css">
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body data-spy="scroll" data-offset="300" data-target="#navbar">
     <nav id="navbar" class="bg-dark navbar-transparent navbar navbar-expand-md navbar-dark animated fadeIn">
       <div class="container">
         <a class="navbar-brand animated pulse infinite d-sm-block d-none" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
@@ -62,16 +62,16 @@
     </header><!-- End of Header -->
 
     <!-- About Me Section -->
-    <section id="aboutMe" class="about-me calc-height d-flex align-items-center py-5 py-lg-0">
-      <div class="container">
-        <div class="row justify-content-around align-items-center">
-          <div class="col-lg-4 col-6 main-image mt-5 mt-lg-0 pb-3">
-              <img class="img-fluid img-thumbnail d-lg-block d-none" src="img/ibrahimhasan.jpg" alt="Personal Photo">
+    <section id="aboutMe" class="about-me calc-height d-flex align-items-center py-5 py-lg-0" style="overflow: hidden">
+      <div>
+        <div class="row justify-content-left align-items-center">
+          <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image mt-5 mt-lg-0 p-lg-0 pb-3 d-block">
+              <img class="img-fluid d-lg-block d-none" src="img/ibrahimhasan.jpg" alt="Personal Photo">
               <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="img/ibrahimhasan-rounded.jpg" alt="Personal Photo">
           </div>
-          <div class="row col-lg-7 col-12">
-            <h1 class="section-heading text-light">Who am I?</h1>
-            <p class="summary text-light text-justify">Here is some background information about me: I am Ibrahim from Syria.
+          <div class="px-5 row col-lg-8 col-12">
+            <h1 class="section-heading">Who am I?</h1>
+            <p class="summary text-justify">Here is some background information about me: I am Ibrahim from Syria.
             I am a mechatronics engineer, graduated in 2015.
             I have an ambition, and in order to fulfill it, I have to work hard, think smart,
             and improve myself. My mother tongue is Arabic, and I am fluent in English.
@@ -81,7 +81,7 @@
             web development needs to be broadened, thus I am learning PHP.</p>
             <hr>
             <div class="col-12 text-center">
-              <a class="btn btn-outline-warning btn-services" href="#" role="button">Click me for more!</a>
+              <a class="btn btn-outline-primary btn-lg btn-services" href="#" role="button">Click me for more!</a>
             </div>
           </div><!-- End of Nested Row -->
         </div><!-- End of Row -->
@@ -92,11 +92,11 @@
     <section id="services" class="services calc-height feature-box d-flex align-items-center py-5 py-lg-0">
       <div class="container">
         <h1 class="section-heading mt-5 mt-lg-0">What can I do for you?</h1>
-        <p class="section-description lead mr-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p class="section-description lead mr-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         <div class="row">
             <div class="col-lg-4">
               <div class="service-heading">
-                <i class="fa fa-area-chart"></i>
+                <i class="fa fa-area-chart fa-5x fa-fw mb-2"></i>
                 <h5 class="feature-title font-weight-bold">Analytics</h5>
               </div>
                 <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
@@ -104,7 +104,7 @@
 
             <div class="col-lg-4">
               <div class="service-heading">
-                <i class="fa fa-book"></i>
+                <i class="fa fa-book fa-5x fa-fw mb-2"></i>
                 <h5 class="feature-title font-weight-bold">Tutorials</h5>
               </div>
                 <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
@@ -112,7 +112,7 @@
 
             <div class="col-lg-4">
               <div class="service-heading">
-                <i class="fa fa-coffee"></i>
+                <i class="fa fa-coffee fa-5x fa-fw mb-2"></i>
                 <h5 class="feature-title font-weight-bold">Relax</h5>
               </div>
                 <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
@@ -122,7 +122,7 @@
     </section><!-- End of Services Section -->
 
     <!-- Projects Section -->
-    <section id="projects" class="projects container-fluid clearfix">
+    <section id="projects" class="projects clearfix">
       <div class="row no-gutter">
 
         <div class="project col-lg-4 col-md-6 col-sm-12">

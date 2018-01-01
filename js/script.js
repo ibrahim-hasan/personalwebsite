@@ -36,25 +36,37 @@ document.scroll(
     $.smoothScroll( {
       scrollTarget: target,
       easing: 'swing',
-      speed: 700
+      speed: 700,
+      offset: -navbar.outerHeight(true)
     } );
   });
 
   $('.btn-about').on('click', function() {
-          target = '#aboutMe';
-          $.smoothScroll( {scrollTarget: target} );
-    });
+    target = '#aboutMe';
+    $.smoothScroll( {
+      scrollTarget: target,
+      easing: 'swing',
+      speed: 700,
+      offset: -navbar.outerHeight(true)
+    } );
+  });
 
   $('.btn-services').on('click', function() {
-          target = '#services';
-          $.smoothScroll( {scrollTarget: target} );
-    });
+    target = '#services';
+    $.smoothScroll( {
+      scrollTarget: target,
+      easing: 'swing',
+      speed: 700,
+      offset: -navbar.outerHeight(true)
+    } );
+  });
 
   function sectionHeight() {
     "use strict";
-    $(".calc-height").height($(window).height());
-  }
+    $(".calc-height").height($(window).height() - navbar.outerHeight(true));
+    $(".header").height($(window).height());
 
+  }
 
   function navOnScroll() {
     if(document.scrollTop() > 100) {
