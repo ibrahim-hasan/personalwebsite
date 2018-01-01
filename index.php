@@ -69,7 +69,7 @@
               <img class="img-fluid d-lg-block d-none" src="img/ibrahimhasan.jpg" alt="Personal Photo">
               <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="img/ibrahimhasan-rounded.jpg" alt="Personal Photo">
           </div>
-          <div class="px-5 row col-lg-8 col-12">
+          <div class="px-4 px-md-5 row col-lg-8 col-12">
             <h1 class="section-heading">Who am I?</h1>
             <p class="summary text-justify">Here is some background information about me: I am Ibrahim from Syria.
             I am a mechatronics engineer, graduated in 2015.

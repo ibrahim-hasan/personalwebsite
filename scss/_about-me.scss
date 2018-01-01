@@ -6,7 +6,7 @@
 */
 
 .about-me {
-  background: $grey-2;
+  background: $grey-1;
   color: $grey-5;
   h1, p {
     line-height: 1.5;
@@ -14,7 +14,7 @@
 
   img
   {
-  	box-shadow: 0 0 4px 2px $blackTran-2;
+  	box-shadow: 1px 0 7px 2px $blackTran-2;
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
     @include transition(filter, 0.5s);
@@ -43,7 +43,8 @@
 
 @media screen and (max-width: 576px) {
   .summary {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: left;
   }
 }
 

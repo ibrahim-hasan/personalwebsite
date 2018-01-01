@@ -45,17 +45,14 @@ $iteration: infinite) {
 
   -webkit-animation-duration: $duration;
   -moz-animation-duration: $duration;
-  -ms-animation-duration: $duration;
   -o-animation-duration: $duration;
   animation-duration: $duration;
   -webkit-animation-delay: $delay;
   -moz-animation-delay: $delay;
-  -ms-animation-delay: $delay;
   -o-animation-delay: $delay;
   animation-delay: $delay;
   -webkit-animation-iteration-count: $iteration;
   -moz-animation-iteration-count: $iteration;
-  -ms-animation-iteration-count: $iteration;
   -o-animation-iteration-count: $iteration;
   animation-iteration-count: $iteration;
 }
@@ -63,9 +60,11 @@ $iteration: infinite) {
 @mixin hr(
 $width: 50%,
 $borderWidth: 3px,
-$borderColor: rgba(2, 145, 140, 0.5)) {
+$borderColor: $primary,
+$opacity: 1) {
 
   max-width: $width;
   border-width: $borderWidth;
   border-color: $borderColor;
+  opacity: $opacity;
 }
