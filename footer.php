@@ -59,7 +59,7 @@
   </footer>
 
   <!--Copyright-->
-  <div class="copyright">
+  <div class="copyright d-none d-md-block">
     <p class="text-center">
       Copyright &copy; <?php echo date('Y'); ?> by Ibrahim Hasan. All Rights Reserved.
     </p>

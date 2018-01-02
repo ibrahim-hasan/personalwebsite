@@ -9,13 +9,13 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif;
   background: #eeeeee;
   line-height: 1.2;
   position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif; }
 
 p {
   font-size: 20px;
@@ -40,7 +40,6 @@ a {
   min-height: 500px; }
 
 .section-heading {
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 800; }
 
@@ -61,13 +60,52 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
 
+.btn-top {
+  position: fixed;
+  right: 10px;
+  bottom: 32px;
+  z-index: 5;
+  padding: 10px 15px; }
+
+#btnTop {
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+@media screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 1.75rem; } }
+
 /**
 *
 * Navigation Bar
 *
 */
+#navbar {
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
 .navbar-brand {
-  font-family: 'Kaushan Script', 'Courgette';
+  font-family: 'Kaushan Script', PT_Serif;
   color: #ffffff; }
 
 /* Default Navbar Style (appears after scrolling up): */
@@ -173,9 +211,9 @@ a {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 600;
-    line-height: 0; }
+    line-height: 0;
+    font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif; }
   .header .my-name {
-    font-family: 'Open Sans', sans-serif;
     letter-spacing: 15px;
     text-transform: uppercase;
     font-size: 60px;
@@ -207,13 +245,13 @@ a {
 */
 .about-me {
   background: #eeeeee;
-  color: #333333; }
+  color: #212529; }
   .about-me h1, .about-me p {
     line-height: 1.5; }
   .about-me img {
     box-shadow: 1px 0 7px 2px rgba(0, 0, 0, 0.6);
     -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    filter: grayscale(60%);
     -webkit-transition: filter 0.5s;
     -moz-transition: filter 0.5s;
     -o-transition: filter 0.5s;
@@ -223,8 +261,6 @@ a {
       filter: grayscale(0%); }
   .about-me h1 {
     color: #f05f40; }
-    .about-me h1::first-letter {
-      font-size: 50px; }
 
 /**
 *
@@ -285,7 +321,7 @@ a {
     overflow: hidden;
     top: 0;
     left: 0;
-    padding: 40px 30px; }
+    padding: 40px 0; }
   .hovereffect img {
     opacity: 1;
     display: block;
@@ -321,7 +357,7 @@ a {
   .hovereffect h1:after {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 10%;
     width: 0%;
     height: 2px;
     background: #ffffff;
@@ -331,6 +367,8 @@ a {
     -o-transition: width 0.5s;
     transition: width 0.5s; }
   .hovereffect p {
+    margin-left: 10%;
+    width: 80%;
     color: #ffffff;
     font-size: 16px;
     opacity: 0;
@@ -355,7 +393,7 @@ a {
   .hovereffect:hover h1 {
     background: transparent; }
   .hovereffect:hover h1:after {
-    width: 100%; }
+    width: 80%; }
   .hovereffect:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -398,6 +436,8 @@ a.unfinished-project:hover {
   .footer .socials {
     list-style-type: none;
     width: 100%; }
+    .footer .socials h4 {
+      font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
     .footer .socials ul {
       padding: 0;
       padding-top: 1rem;
@@ -422,8 +462,6 @@ a.unfinished-project:hover {
         .footer .socials ul li .phone:hover,
         .footer .socials ul li .phone:focus {
           color: #28a745; }
-    .footer .socials h4 {
-      font-weight: 600; }
 
 .copyright {
   width: 100%;
@@ -447,21 +485,27 @@ a.unfinished-project:hover {
     color: #ffffff !important;
     border: 2px solid #f05f40 !important;
     background-color: #f05f40 !important;
-    box-shadow: 0 0 0 0 #eeeeee !important; }
+    box-shadow: 0 0 0 0 #ffffff !important; }
   .btn-outline-primary:active {
     color: #ffffff !important;
     border: 2px solid #f05f40 !important;
     background-color: #f05f40 !important;
+    box-shadow: 0 0 0 0.2rem #ffffff !important; }
+
+.btn-outline-info {
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  background-color: transparent !important; }
+  .btn-outline-info:hover, .btn-outline-info:focus {
+    color: #ffffff !important;
+    border: 2px solid #f05f40 !important;
+    background-color: #f05f40 !important;
+    box-shadow: 0 0 0 0 #eeeeee !important; }
+  .btn-outline-info:active {
+    color: #ffffff !important;
+    border: 2px solid #f05f40 !important;
+    background-color: #f05f40 !important;
     box-shadow: 0 0 0 0.2rem #eeeeee !important; }
-
-.btn-outline-info,
-.btn-outline-warning {
-  color: #fff !important;
-  border: 2px solid #ffffff; }
-
-.btn-outline-info:hover {
-  background-color: #f05f40 !important;
-  border-color: #f05f40 !important; }
 
 /* Remove the gutter between columns in Boostrap. */
 .no-gutter > [class*='col-'] {
@@ -474,7 +518,7 @@ a.unfinished-project:hover {
 .nav-link {
   margin: 0 3px;
   /* Adding some space between navigation menu items. */
-  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; }
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif; }
 
 @media (min-width: 576px) {
   .border-between > [class*='col-']:before {

@@ -7,8 +7,12 @@
 *
 */
 
+#navbar {
+  @include animate(0.7s, 0s, 1);
+}
+
 .navbar-brand {
-  font-family: 'Kaushan Script', 'Courgette';
+  font-family: 'Kaushan Script', PT_Serif;
   color: $navBrand;
 }
 

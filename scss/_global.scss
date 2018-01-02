@@ -11,14 +11,14 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: $PT_Serif;
   background: $secondary;
   line-height: 1.2;
   position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: $Open_Sans;
 }
 
 p {
@@ -47,7 +47,6 @@ a {
 }
 
 .section-heading {
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -72,4 +71,22 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.btn-top {
+  position: fixed;
+  right: 10px;
+  bottom: 32px;
+  z-index: 5;
+  padding: 10px 15px;
+}
+
+#btnTop {
+  @include animate(0.8s, 0s, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .section-heading {
+    font-size: 1.75rem;
+  }
 }

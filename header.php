@@ -12,7 +12,7 @@
   <!-- fontAwesome for Text Icons -->
   <link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
   <!-- Google Font for Brand Name -->
-  <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Open+Sans:400,400i,600,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,400i,600,800|PT+Serif:400,400i,700,700i" rel="stylesheet">
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.min.css">
   <!-- Animate.css Plugin -->

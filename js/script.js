@@ -9,16 +9,19 @@ $('document').ready(function() {
   var target;
 
   sectionHeight();
-  navOnScroll();
+  setTimeout(navOnScroll, 100);
+  setTimeout(btnTop, 100);
 
 document.scroll(
   function() {
-    navOnScroll();
+    setTimeout(navOnScroll, 100);
+    setTimeout(btnTop, 100);
+    console.log(document.scrollTop());
   });
 
 document.resize(
   function() {
-    navOnScroll();
+    setTimeout(navOnScroll, 100);
     sectionHeight();
   });
 
@@ -79,6 +82,18 @@ document.resize(
     });
   });
 
+  $('.btn-top').on('click', function() {
+    target = '#home';
+
+    hideToggleOnScroll();
+
+    $.smoothScroll({
+      scrollTarget: target,
+      easing: 'swing',
+      speed: 900
+    });
+  });
+
   function hideToggleOnScroll() {
     document.scroll(function() {
       $('.navbar-toggler').addClass('collapsed');
@@ -104,6 +119,19 @@ document.resize(
       navbar.addClass('navbar-transparent');
       navbar.removeClass('navbar-default fixed');
       navbar.removeClass('fadeInDown');
+    }
+  }
+
+  function btnTop() {
+    if(document.scrollTop() > 100) {
+
+      $('.btn-top').addClass('fadeInUp');
+      $('.btn-top').removeClass('fadeOutDown');
+
+    } else {
+
+      $('.btn-top').addClass('fadeOutDown');
+      $('.btn-top').removeClass('fadeInUp');
     }
   }
 

@@ -1,12 +1,13 @@
 <?php require('header.php'); ?>
-
+<a href="#" id="btnTop" class="btn-top btn btn-sq btn-outline-primary animated">
+    <i class="fa fa-chevron-up fa-1x"></i>
+</a>
 <!-- About Me Section -->
 <section id="aboutMe" class="about-me calc-height d-flex align-items-center py-5 py-lg-0" style="overflow: hidden">
   <div>
     <div class="row justify-content-left align-items-center">
       <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image p-lg-0 pb-3 d-block">
-        <img class="img-fluid d-lg-block d-none" src="img/ibrahimhasan.jpg" alt="Personal Photo">
-        <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="img/ibrahimhasan-rounded.jpg" alt="Personal Photo">
+        <img class="img-fluid" src="img/ibrahimhasan.jpg" alt="Personal Photo">
       </div>
       <div class="px-4 px-md-5 row col-lg-8 col-12">
         <h1 class="section-heading">Who am I?</h1>

@@ -28,7 +28,7 @@
     overflow: hidden;
     top: 0;
     left: 0;
-    padding: 40px 30px;
+    padding: 40px 0;
   }
 
   img {
@@ -61,7 +61,7 @@
   h1:after {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 10%;
     width: 0%;
     height: 2px;
     background: $white;
@@ -70,6 +70,8 @@
   }
 
   p {
+    margin-left: 10%;
+    width: 80%;
     color: $white;
     font-size: 16px;
     opacity: 0;
@@ -89,7 +91,7 @@
     }
 
     h1:after {
-      width: 100%
+      width: 80%
     }
 
     p {
