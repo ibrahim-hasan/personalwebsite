@@ -6,7 +6,7 @@
 */
 
 .projects {
-  background-color: $secondary;
+  background-color: $white;
   color: $primary;
   height: auto !important;
 }
@@ -19,7 +19,7 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  background: $black;
+  background: $primary;
   outline: 1px solid $grey-1;
 
   .overlay {
@@ -50,7 +50,8 @@
     font-weight: 600;
     letter-spacing: 1px;
     overflow: hidden;
-    background: $blackTran-2;
+    background: $primary;
+    opacity: 0.9;
     margin: 0;
     margin-bottom: 5px;
     padding: 10px 0;
@@ -79,7 +80,7 @@
 
   &:hover {
     img {
-      opacity: 0.4;
+      opacity: 0.1;
       @include transform3d();
     }
 

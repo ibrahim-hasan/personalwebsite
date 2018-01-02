@@ -266,7 +266,7 @@ a {
 * Projects Section
 */
 .projects {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   color: #f05f40;
   height: auto !important; }
 
@@ -277,7 +277,7 @@ a {
   overflow: hidden;
   position: relative;
   text-align: center;
-  background: #000000;
+  background: #f05f40;
   outline: 1px solid #eeeeee; }
   .hovereffect .overlay {
     width: 100%;
@@ -309,7 +309,8 @@ a {
     font-weight: 600;
     letter-spacing: 1px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.6);
+    background: #f05f40;
+    opacity: 0.9;
     margin: 0;
     margin-bottom: 5px;
     padding: 10px 0;
@@ -346,7 +347,7 @@ a {
     -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
   .hovereffect:hover img {
-    opacity: 0.4;
+    opacity: 0.1;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -387,7 +388,7 @@ a.unfinished-project:hover {
 .footer {
   width: 100%;
   height: 400px;
-  background: #333333;
+  background: #212529;
   color: #ffffff; }
   .footer hr {
     width: 10%;

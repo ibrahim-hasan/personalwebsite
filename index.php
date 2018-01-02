@@ -4,7 +4,7 @@
 <section id="aboutMe" class="about-me calc-height d-flex align-items-center py-5 py-lg-0" style="overflow: hidden">
   <div>
     <div class="row justify-content-left align-items-center">
-      <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image mt-5 mt-lg-0 p-lg-0 pb-3 d-block">
+      <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image p-lg-0 pb-3 d-block">
         <img class="img-fluid d-lg-block d-none" src="img/ibrahimhasan.jpg" alt="Personal Photo">
         <img class="img-fluid rounded-circle img-thumbnail d-lg-none d-block" src="img/ibrahimhasan-rounded.jpg" alt="Personal Photo">
       </div>
@@ -30,7 +30,7 @@
 <!-- Services Section -->
 <section id="services" class="services calc-height feature-box d-flex align-items-center py-5 py-lg-0">
   <div class="container">
-    <h1 class="section-heading mt-5 mt-lg-0">What can I do for you?</h1>
+    <h1 class="section-heading">What can I do for you?</h1>
     <p class="section-description lead mr-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     <div class="row">
       <div class="col-lg-4">
