@@ -6,26 +6,28 @@
 */
 
 .footer {
-  bottom: 0;
-  left: 0;
   width: 100%;
+  height: 400px;
   background: $grey-5;
   color: $white;
+
+  hr {
+    @include hr(10%, 3px, $primary, 0.8);
+  }
 
   .socials {
     list-style-type: none;
     width: 100%;
-    padding: 0;
-    margin: 0 auto;
 
     ul {
       padding: 0;
       padding-top: 1rem;
       text-align: center;
+      margin: 0;
 
       li {
         padding: 5px;
-        margin: 0 10px 0 10px;
+        margin: 0 10px;
         display: inline-block;
 
         .facebook:hover,
@@ -54,12 +56,20 @@
         }
       }
     }
-  }
 
-  .copyright p {
+    h4 {
+      font-weight: 600;
+    }
+  }
+}
+
+.copyright {
+  width: 100%;
+  background-color: $secondary;
+  color: $grey-5;
+
+  p {
     margin: 0;
-    background-color: $secondary;
-    color: $grey-5;
     font-size: 14px;
   }
 }

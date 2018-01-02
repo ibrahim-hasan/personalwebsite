@@ -63,7 +63,7 @@ $borderWidth: 3px,
 $borderColor: $primary,
 $opacity: 1) {
 
-  max-width: $width;
+  width: $width;
   border-width: $borderWidth;
   border-color: $borderColor;
   opacity: $opacity;

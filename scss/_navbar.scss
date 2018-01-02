@@ -99,9 +99,11 @@
 
 @media screen and (max-width: 576px) {
   .navbar {
+    background-color: $primary;
 
     .navbar-nav {
-      flex-direction: row;
+      flex-direction: column;
+      text-align: center;
       margin: 0 auto;
       margin-top: 10px;
       padding-left: 0;

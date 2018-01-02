@@ -16,7 +16,11 @@ document.scroll(
     navOnScroll();
   });
 
-
+document.resize(
+  function() {
+    navOnScroll();
+    sectionHeight();
+  });
 
 // Smooth Scroll
 
@@ -31,6 +35,9 @@ document.scroll(
           break;
       case 'Projects':
           target = '#projects';
+          break;
+      case 'Contact':
+          target = '#contact';
           break;
       default:
           target = '#home';
@@ -86,7 +93,7 @@ document.scroll(
   }
 
   function navOnScroll() {
-    if(document.scrollTop() > 100) {
+    if(document.scrollTop() > 100 || $(window).width() < 768) {
 
       navbar.addClass('navbar-default');
       navbar.removeClass('navbar-transparent');

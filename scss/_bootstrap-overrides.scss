@@ -46,7 +46,23 @@
     padding-left:0;
 }
 
+.border-between > [class*='col-']:first-child:before {
+   display: none;
+}
+
 .nav-link {
   margin: 0 3px; /* Adding some space between navigation menu items. */
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+@media ( min-width: 576px ) {
+  .border-between > [class*='col-']:before {
+     background: $white;
+     bottom: 0;
+     content: " ";
+     left: 0;
+     position: absolute;
+     width: 2px;
+     top: 0;
+  }
 }
