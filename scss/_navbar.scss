@@ -89,14 +89,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding-left: 0;
+  .navbar {
+    padding: 3px 16px;
 
-    .nav-item {
-      margin: 0 2px;
+    .navbar-nav {
+      flex-direction: row;
+      margin: 0 auto;
+      margin-top: 10px;
+      padding-left: 0;
+
+      .nav-item {
+        margin: 0 2px;
+      }
     }
   }
 }

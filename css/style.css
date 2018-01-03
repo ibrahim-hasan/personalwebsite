@@ -169,13 +169,15 @@ a {
   animation-iteration-count: infinite; }
 
 @media screen and (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding-left: 0; }
-    .navbar-nav .nav-item {
-      margin: 0 2px; } }
+  .navbar {
+    padding: 3px 16px; }
+    .navbar .navbar-nav {
+      flex-direction: row;
+      margin: 0 auto;
+      margin-top: 10px;
+      padding-left: 0; }
+      .navbar .navbar-nav .nav-item {
+        margin: 0 2px; } }
 
 @media screen and (max-width: 576px) {
   .navbar {
@@ -270,7 +272,7 @@ a {
   .about-me .default-headeing {
     width: 100%;
     min-height: 120px;
-    padding: 20px 0;
+    padding: 20px 10px;
     background-color: #212529;
     text-align: center; }
     .about-me .default-headeing h2 {
@@ -325,7 +327,7 @@ a {
   height: auto !important; }
   .projects .default-headeing {
     min-height: 120px;
-    padding: 20px 0;
+    padding: 20px 10px;
     background-color: #212529;
     text-align: center; }
     .projects .default-headeing h2 {
