@@ -1,31 +1,45 @@
 <?php require('header.php'); ?>
-<a href="#" id="btnTop" class="btn-top btn btn-sq btn-outline-primary animated">
+<a href="#" id="btnTop" class="btn-top btn btn-sq btn-outline-primary animated" role="button">
     <i class="fa fa-chevron-up fa-1x"></i>
 </a>
 <!-- About Me Section -->
-<section id="aboutMe" class="about-me calc-height d-flex align-items-center py-5 py-lg-0" style="overflow: hidden">
-  <div>
-    <div class="row justify-content-left align-items-center">
-      <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image p-lg-0 pb-3 d-block">
-        <img class="img-fluid" src="img/ibrahimhasan.jpg" alt="Personal Photo">
+<section id="aboutMe" class="about-me align-items-center" style="overflow: hidden">
+  <div class="row calc-height justify-content-left align-items-center py-5 py-lg-0">
+    <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image p-lg-0 pb-3 d-block">
+      <img class="img-fluid" src="img/ibrahimhasan.jpg" alt="Personal Photo">
+    </div>
+    <div class="px-4 px-md-5 row col-lg-8 col-12">
+      <h1 class="section-heading">Who am I?</h1>
+      <p class="summary text-justify">Here is some background information about me: I am Ibrahim from Syria.
+      I am a mechatronics engineer, graduated in 2015.
+      I have an ambition, and in order to fulfill it, I have to work hard, think smart,
+      and improve myself. My mother tongue is Arabic, and I am fluent in English.
+      I am an excellent computer user. Recently, I have become interested in web development;
+      in fact, this website is my first project as a front-end web developer, and it was designed
+      using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end
+      web development needs to be broadened, thus I am learning PHP.</p>
+      <hr>
+      <div class="col-12 text-center">
+        <a class="btn btn-outline-primary btn-lg btn-skills" href="#skills" role="button">Click me for more!</a>
       </div>
-      <div class="px-4 px-md-5 row col-lg-8 col-12">
-        <h1 class="section-heading">Who am I?</h1>
-        <p class="summary text-justify">Here is some background information about me: I am Ibrahim from Syria.
-        I am a mechatronics engineer, graduated in 2015.
-        I have an ambition, and in order to fulfill it, I have to work hard, think smart,
-        and improve myself. My mother tongue is Arabic, and I am fluent in English.
-        I am an excellent computer user. Recently, I have become interested in web development;
-        in fact, this website is my first project as a front-end web developer, and it was designed
-        using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end
-        web development needs to be broadened, thus I am learning PHP.</p>
-        <hr>
-        <div class="col-12 text-center">
-          <a class="btn btn-outline-primary btn-lg btn-services" href="#services" role="button">Click me for more!</a>
-        </div>
-      </div><!-- End of Nested Row -->
-    </div><!-- End of Row -->
-  </div><!-- End of Container -->
+    </div><!-- End of Nested Row -->
+  </div><!-- End of Row -->
+  <div id="skills" class="row skills d-flex flex-column justify-content-between align-items-center">
+    <div class="default-headeing row d-flex justify-content-center align-items-center">
+      <h2>Skills</h2>
+    </div>
+    <div class="row container-fluid d-flex justify-content-center align-items-center py-3 mb-5">
+      <div class="col-lg-4 col-md-8 col-12 py-3 py-lg-5">
+        <canvas id="web" width="450" height="350"></canvas>
+      </div>
+      <div class="col-lg-4 col-md-8 col-12 py-3 py-lg-5">
+        <canvas id="computer" width="350" height="350"></canvas>
+      </div>
+      <div class="col-lg-4 col-md-8 col-12 py-3 py-lg-5">
+        <canvas id="languages" width="350" height="350"></canvas>
+      </div>
+    </div>
+  </div>
 </section><!-- End of About Me Section -->
 
 <!-- Services Section -->
@@ -63,6 +77,9 @@
 
 <!-- Projects Section -->
 <section id="projects" class="projects clearfix">
+  <div class="default-headeing row d-flex justify-content-center align-items-center">
+    <h2>Here are my projects. Have a look!</h2>
+  </div>
   <div class="row no-gutter">
 
     <div class="project col-lg-4 col-md-6 col-sm-12">

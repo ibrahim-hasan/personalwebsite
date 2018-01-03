@@ -2,7 +2,7 @@
   <footer id="contact" class="footer d-flex align-items-center">
     <div class="container">
       <div class="row d-flex flex-column text-center">
-        <h3>Let's Get In Touch!</h3>
+        <h2>Let's Get In Touch!</h2>
         <hr>
       </div>
       <div class="row socials border-between">
@@ -68,6 +68,7 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="src/jquery/jquery.min.js"></script>
   <script src="src/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+  <script src="src/chart.js/chart.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="src/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/script.min.js"></script>

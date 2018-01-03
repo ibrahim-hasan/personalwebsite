@@ -175,7 +175,7 @@ a {
     margin-top: 10px;
     padding-left: 0; }
     .navbar-nav .nav-item {
-      margin: 0 5px; } }
+      margin: 0 2px; } }
 
 @media screen and (max-width: 576px) {
   .navbar {
@@ -259,8 +259,20 @@ a {
     .about-me img:hover, .about-me img:focus {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
-  .about-me h1 {
-    color: #f05f40; }
+  .about-me h2 {
+    color: #f05f40;
+    text-align: center;
+    font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
+  .about-me .skills {
+    background: #eeeeee;
+    height: auto !important; }
+  .about-me .default-headeing {
+    height: 120px;
+    width: 100%;
+    background-color: #212529; }
+    .about-me .default-headeing h2 {
+      color: #ffffff;
+      font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
 
 /**
 *
@@ -273,7 +285,7 @@ a {
     text-align: left; } }
 
 @media screen and (max-width: 992px) {
-  .about-me {
+  .about-me .calc-height {
     height: auto !important;
     /* Solves the height of the container div not extending with its content on small devices */ } }
 
@@ -283,9 +295,12 @@ a {
 .services {
   background-color: #ffffff;
   text-align: center;
-  color: #f05f40; }
+  color: #666666; }
+  .services h1 {
+    color: #212529; }
   .services .service-heading {
-    text-align: center; }
+    text-align: center;
+    color: #f05f40; }
   .services .feature-title {
     color: #f05f40; }
 
@@ -305,107 +320,109 @@ a {
   background-color: #ffffff;
   color: #f05f40;
   height: auto !important; }
-
-/* Custom hover effect for images */
-.hovereffect {
-  width: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  background: #f05f40;
-  outline: 1px solid #eeeeee; }
-  .hovereffect .overlay {
+  .projects .default-headeing {
+    height: 120px;
+    background-color: #212529; }
+    .projects .default-headeing h2 {
+      color: #ffffff;
+      font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
+  .projects .hovereffect {
     width: 100%;
-    position: absolute;
+    float: left;
     overflow: hidden;
-    top: 0;
-    left: 0;
-    padding: 40px 0; }
-  .hovereffect img {
-    opacity: 1;
-    display: block;
     position: relative;
-    max-width: none;
-    width: calc(100% + 20px);
-    -webkit-transform: translate3d(-20px, 0, 0);
-    -moz-transform: translate3d(-20px, 0, 0);
-    -o-transform: translate3d(-20px, 0, 0);
-    transform: translate3d(-20px, 0, 0);
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
-  .hovereffect h1 {
-    text-transform: uppercase;
-    color: #ffffff;
     text-align: center;
-    position: relative;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    overflow: hidden;
     background: #f05f40;
-    opacity: 0.9;
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 10px 0;
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    transition: background 0.5s; }
-  .hovereffect h1:after {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    content: '';
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -o-transition: width 0.5s;
-    transition: width 0.5s; }
-  .hovereffect p {
-    margin-left: 10%;
-    width: 80%;
-    color: #ffffff;
-    font-size: 16px;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  .hovereffect:hover img {
-    opacity: 0.1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  .hovereffect:hover h1 {
-    background: transparent; }
-  .hovereffect:hover h1:after {
-    width: 80%; }
-  .hovereffect:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-
-a.finished-project:hover {
-  cursor: pointer; }
-
-a.unfinished-project:hover {
-  cursor: wait; }
+    outline: 1px solid #eeeeee; }
+    .projects .hovereffect .overlay {
+      width: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      padding: 40px 0; }
+    .projects .hovereffect img {
+      opacity: 1;
+      display: block;
+      position: relative;
+      max-width: none;
+      width: calc(100% + 20px);
+      -webkit-transform: translate3d(-20px, 0, 0);
+      -moz-transform: translate3d(-20px, 0, 0);
+      -o-transform: translate3d(-20px, 0, 0);
+      transform: translate3d(-20px, 0, 0);
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .projects .hovereffect h1 {
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      overflow: hidden;
+      background: #f05f40;
+      opacity: 0.9;
+      margin: 0;
+      margin-bottom: 5px;
+      padding: 10px 0;
+      -webkit-transition: background 0.5s;
+      -moz-transition: background 0.5s;
+      -o-transition: background 0.5s;
+      transition: background 0.5s; }
+    .projects .hovereffect h1:after {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 0%;
+      height: 2px;
+      background: #ffffff;
+      content: '';
+      -webkit-transition: width 0.5s;
+      -moz-transition: width 0.5s;
+      -o-transition: width 0.5s;
+      transition: width 0.5s; }
+    .projects .hovereffect p {
+      margin-left: 10%;
+      width: 80%;
+      color: #ffffff;
+      font-size: 16px;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s;
+      -webkit-transform: translate3d(100%, 0, 0);
+      -moz-transform: translate3d(100%, 0, 0);
+      -o-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0); }
+    .projects .hovereffect:hover img {
+      opacity: 0.1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+    .projects .hovereffect:hover h1 {
+      background: transparent; }
+    .projects .hovereffect:hover h1:after {
+      width: 80%; }
+    .projects .hovereffect:hover p {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+  .projects a.finished-project:hover {
+    cursor: pointer; }
+  .projects a.unfinished-project:hover {
+    cursor: wait; }
 
 /**
 *
@@ -428,6 +445,8 @@ a.unfinished-project:hover {
   height: 400px;
   background: #212529;
   color: #ffffff; }
+  .footer h2 {
+    font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
   .footer hr {
     width: 10%;
     border-width: 3px;

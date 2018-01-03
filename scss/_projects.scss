@@ -9,106 +9,114 @@
   background-color: $white;
   color: $primary;
   height: auto !important;
-}
 
-/* Custom hover effect for images */
+  .default-headeing {
+    height: 120px;
+    background-color: $black;
 
-.hovereffect {
-  width: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  background: $primary;
-  outline: 1px solid $grey-1;
+    h2 {
+      color: $white;
+      font-family: $PT_Serif;
+    }
+  }
 
-  .overlay {
+  .hovereffect {
     width: 100%;
-    position: absolute;
+    float: left;
     overflow: hidden;
-    top: 0;
-    left: 0;
-    padding: 40px 0;
-  }
-
-  img {
-    opacity: 1;
-    display: block;
     position: relative;
-    max-width: none;
-    width: calc(100% + 20px);
-    @include transform3d(-20px, 0, 0);
-    @include transition(all, 0.5s);
-  }
-
-  h1 {
-    text-transform: uppercase;
-    color: $white;
     text-align: center;
-    position: relative;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    overflow: hidden;
     background: $primary;
-    opacity: 0.9;
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 10px 0;
-    @include transition(background, 0.5s);
-  }
+    outline: 1px solid $grey-1;
 
-  h1:after {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    width: 0%;
-    height: 2px;
-    background: $white;
-    content: '';
-    @include transition(width, 0.5s);
-  }
+    .overlay {
+      width: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      padding: 40px 0;
+    }
 
-  p {
-    margin-left: 10%;
-    width: 80%;
-    color: $white;
-    font-size: 16px;
-    opacity: 0;
-    @include transition(opacity, 0.5s);
-    @include transition(transform, 0.5s);
-    @include transform3d(100%, 0, 0);
-  }
-
-  &:hover {
     img {
-      opacity: 0.1;
-      @include transform3d();
+      opacity: 1;
+      display: block;
+      position: relative;
+      max-width: none;
+      width: calc(100% + 20px);
+      @include transform3d(-20px, 0, 0);
+      @include transition(all, 0.5s);
     }
 
     h1 {
-      background: transparent;
+      text-transform: uppercase;
+      color: $white;
+      text-align: center;
+      position: relative;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      overflow: hidden;
+      background: $primary;
+      opacity: 0.9;
+      margin: 0;
+      margin-bottom: 5px;
+      padding: 10px 0;
+      @include transition(background, 0.5s);
     }
 
     h1:after {
-      width: 80%
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 0%;
+      height: 2px;
+      background: $white;
+      content: '';
+      @include transition(width, 0.5s);
     }
 
     p {
-      opacity: 1;
-      @include transform3d();
+      margin-left: 10%;
+      width: 80%;
+      color: $white;
+      font-size: 16px;
+      opacity: 0;
+      @include transition(opacity, 0.5s);
+      @include transition(transform, 0.5s);
+      @include transform3d(100%, 0, 0);
+    }
+
+    &:hover {
+      img {
+        opacity: 0.1;
+        @include transform3d();
+      }
+
+      h1 {
+        background: transparent;
+      }
+
+      h1:after {
+        width: 80%
+      }
+
+      p {
+        opacity: 1;
+        @include transform3d();
+      }
     }
   }
-}
 
-a.finished-project:hover {
-  cursor: pointer;
-}
+  a.finished-project:hover {
+    cursor: pointer;
+  }
 
-a.unfinished-project:hover {
-  cursor: wait;
-}
+  a.unfinished-project:hover {
+    cursor: wait;
+  }
 
+}
 
 /**
 *

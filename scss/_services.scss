@@ -8,10 +8,15 @@
 .services {
   background-color: $white;
   text-align: center;
-  color: $primary;
+  color: $grey-4;
+
+  h1 {
+    color: $black;
+  }
 
   .service-heading {
     text-align: center;
+    color: $primary;
   }
 
   .feature-title {

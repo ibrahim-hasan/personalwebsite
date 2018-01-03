@@ -1,138 +1,375 @@
-$('document').ready(function() {
+$(function() {
+/////////////////////////////////////////////
+//////////// Variables Declaration //////////
+/////////////////////////////////////////////
 
-  var document = $(window);
-  var navbar = $('.navbar');
+var header = $(".header");
+var navbar = $('.navbar');
+var navbarToggler = $('.navbar-toggler');
+var navbarCollapse = $('.navbar-collapse');
+var navLink = $('.nav-link');
+var navbarHeight = navbar.outerHeight(true);
 
-  var scrollValue = $(document).scrollTop();
-  var navbarHeight = navbar.outerHeight(true);
+var target;
 
-  var target;
+var btnTop = $('.btn-top');
+var btnAbout = $('.btn-about');
+var btnSkills = $('.btn-skills');
 
-  sectionHeight();
+var calcHeight = $(".calc-height");
+
+var PT_Serif = "PT Serif";
+var Open_Sans = 'Open Sans';
+
+/////////////////////////////////////////////
+//////// End of Variables Declaration ///////
+/////////////////////////////////////////////
+
+/////////////////////////////////////////////
+///////////// Excecute Functions ////////////
+/////////////////////////////////////////////
+
+// Execute these functions when the page is loaded.
+
+sectionHeight();
+setTimeout(navOnScroll, 100);
+setTimeout(btnTopFunc, 100);
+
+// Execute these functions when scrolling.
+
+$(window).scroll(function() {
   setTimeout(navOnScroll, 100);
-  setTimeout(btnTop, 100);
+  setTimeout(btnTopFunc, 100);
+});
 
-document.scroll(
-  function() {
-    setTimeout(navOnScroll, 100);
-    setTimeout(btnTop, 100);
-    console.log(document.scrollTop());
-  });
+// Execute these functions when the view is resized.
 
-document.resize(
-  function() {
-    setTimeout(navOnScroll, 100);
-    sectionHeight();
-  });
+$(window).resize(function() {
+  setTimeout(navOnScroll, 100);
+  sectionHeight();
+});
 
-// Smooth Scroll
+/////////////////////////////////////////////
+///////// End of Excecute Functions /////////
+/////////////////////////////////////////////
 
-  $('.nav-link').on('click', function() {
 
-    switch( $(this).text() ) {
-      case 'About Me':
-          target = '#aboutMe';
-          break;
-      case 'Services':
-          target = '#services';
-          break;
-      case 'Projects':
-          target = '#projects';
-          break;
-      case 'Contact':
-          target = '#contact';
-          break;
-      default:
-          target = '#home';
+/////////////////////////////////////////////
+////////////// Smooth Scroll ////////////////
+/////////////////////////////////////////////
+
+navLink.click(function() {
+
+  switch( $(this).text() ) {
+    case 'About':
+        target = '#aboutMe';
+        break;
+    case 'Skills':
+        target = '#skills';
+        break;
+    case 'Services':
+        target = '#services';
+        break;
+    case 'Projects':
+        target = '#projects';
+        break;
+    case 'Contact':
+        target = '#contact';
+        break;
+    default:
+        target = '#home';
+  }
+
+  smoothScrollFunction();
+});
+
+btnAbout.click(function() {
+  target = '#aboutMe';
+  smoothScrollFunction();
+});
+
+btnSkills.click(function() {
+  target = '#skills';
+  smoothScrollFunction()
+});
+
+btnTop.click(function() {
+  target = '#home';
+  smoothScrollFunction();
+});
+
+/////////////////////////////////////////////
+/////////// End of Smooth Scroll ////////////
+/////////////////////////////////////////////
+
+function webFunc() {
+  var webId = document.getElementById('web').getContext('2d');
+  var web = new Chart(webId, {
+      // The type of chart we want to create
+    type: 'horizontalBar',
+
+    // The data for our dataset
+    data: {
+        labels: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "jQuery", "PHP", "WordPress", "NPM", "Gulp.js", "Git & Github"],
+        datasets: [{
+            label: "Level",
+            backgroundColor: '#f05f40',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [100, 100, 80, 90, 20, 70, 15, 25, 60, 70, 80],
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      maintainAspectRatio: false,
+      legend: {
+          display: false
+      },
+      title: {
+          display: true,
+          text: 'Web Development Skills',
+          fontSize: 22,
+          fontStyle: 'normal',
+          padding: 20,
+          fontFamily: PT_Serif
+      },
+      scales: {
+        yAxes: [{
+          barPercentage: 0.9
+        }],
+        xAxes: [{
+          ticks: {
+              beginAtZero: true
+          },
+          gridLines: {
+            drawOnChartArea: false
+          }
+        }]
+      },
+      tooltips: {
+        displayColors: false
+      }
     }
-
-    hideToggleOnScroll();
-
-    $.smoothScroll({
-      scrollTarget: target,
-      easing: 'swing',
-      speed: 700,
-      offset: -navbarHeight
-    });
   });
+}
 
-  $('.btn-about').on('click', function() {
-    target = '#aboutMe';
+function computerFunc() {
+  var computerId = document.getElementById('computer').getContext('2d');
+  var computer = new Chart(computerId, {
+      // The type of chart we want to create
+    type: 'radar',
 
-    hideToggleOnScroll();
-
-    $.smoothScroll({
-      scrollTarget: target,
-      easing: 'swing',
-      speed: 700,
-      offset: -navbarHeight
-    });
+    // The data for our dataset
+    data: {
+          labels: ["SolidWorks", "MS Excel", "MS Visio", "MS PowerPoint", "MS Word"],
+          datasets: [
+            {
+              label: "Level",
+              fill: true,
+              backgroundColor: "rgba(240,95,64,0.2)",
+              borderColor: "#f05f40",
+              pointBorderColor: "#f05f40",
+              pointBackgroundColor: "rgba(240,95,64,1)",
+              pointBorderWidth: "3",
+              pointStyle: "circle",
+              data: [8, 4, 10, 10, 10]
+            }
+          ]
+        },
+        options: {
+          maintainAspectRatio: false,
+          legend: {
+            display: false
+          },
+          title: {
+            display: true,
+            text: 'Computer Skills',
+            fontSize: 22,
+            fontStyle: 'normal',
+            padding: 20,
+            fontFamily: PT_Serif
+          },
+          scale: {
+            ticks: {
+              display: false,
+              beginAtZero: true,
+              min: 0,
+              max: 10,
+              steps: 5,
+              stepSize: 2
+            },
+            pointLabels: {
+              fontSize: 12
+            }
+          },
+          tooltips: {
+            displayColors: false
+          },
+        }
   });
+}
 
-  $('.btn-services').on('click', function() {
-    target = '#services';
+function languagesFunc() {
+  var languagesId = document.getElementById('languages').getContext('2d');
+  var languages = new Chart(languagesId, {
+    // The type of chart we want to create
+    type: 'polarArea',
 
-    hideToggleOnScroll();
-
-    $.smoothScroll({
-      scrollTarget: target,
-      easing: 'swing',
-      speed: 700,
-      offset: -navbarHeight
-    });
+    // The data for our dataset
+    data: {
+          labels: ["Arabic", "English", "Turkish"],
+          datasets: [
+            {
+              label: "Level",
+              borderWidth: "0.5",
+              backgroundColor: [
+                ('rgba(240,95,64,0.9)'),
+                ('rgba(240,95,64,0.7)'),
+                ('rgba(240,95,64,0.4)')
+              ],
+              data: [10, 8, 2]
+            }
+          ]
+        },
+        options: {
+          maintainAspectRatio: false,
+          legend: {
+            display: true,
+            position: "bottom"
+          },
+          title: {
+            display: true,
+            text: 'Languages',
+            fontSize: 22,
+            fontStyle: 'normal',
+            padding: 20,
+            fontFamily: PT_Serif
+          },
+          scale: {
+            ticks: {
+              display: false,
+              beginAtZero: true,
+              min: 0,
+              max: 10,
+              steps: 5,
+              stepSize: 2
+            },
+            scaleLabel: {
+              display: true
+            }
+          },
+          tooltips: {
+            displayColors: false
+          },
+        }
   });
+}
 
-  $('.btn-top').on('click', function() {
-    target = '#home';
+var webInView = false;
+var computerInView = false;
+var languagesInView = false;
 
-    hideToggleOnScroll();
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
 
-    $.smoothScroll({
-      scrollTarget: target,
-      easing: 'swing',
-      speed: 900
-    });
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+}
+
+$(window).scroll(function() {
+  setTimeout(checkChartView, 1000);
+});
+
+function checkChartView() {
+  if (isScrolledIntoView('#web')) {
+      if (webInView) { return; }
+      webInView = true;
+      webFunc();
+  } else {
+    webInView = false;
+  }
+  if (isScrolledIntoView('#computer')) {
+      if (computerInView) { return; }
+      computerInView = true;
+      computerFunc();
+  } else {
+    computerInView = false;
+  }
+  if (isScrolledIntoView('#languages')) {
+      if (languagesInView) { return; }
+      languagesInView = true;
+      languagesFunc();
+  } else {
+      languagesInView = false;
+  }
+}
+
+/////////////////////////////////////////////
+///////////////// Functions /////////////////
+/////////////////////////////////////////////
+
+// Hide the navigation buttons when scrolling on small devices.
+
+function hideToggleOnScroll() {
+  $(window).scroll(function() {
+    navbarToggler.addClass('collapsed');
+    navbarCollapse.removeClass('show');
   });
+}
 
-  function hideToggleOnScroll() {
-    document.scroll(function() {
-      $('.navbar-toggler').addClass('collapsed');
-      $('.navbar-collapse').removeClass('show');
-    });
+// Change the height of specific sections to match the height of screen.
+
+function sectionHeight() {
+  "use strict";
+  calcHeight.height($(window).height() - navbarHeight);
+  header.height($(window).height());
+}
+
+// Change the styling and animation of the navigation bar depending on the location and width of screen.
+
+function navOnScroll() {
+  if($(window).scrollTop() > 100 || $(window).width() < 768) {
+    navbar.addClass('navbar-default');
+    navbar.removeClass('navbar-transparent');
+    navbar.addClass('fadeInDown');
+  } else {
+    navbar.addClass('navbar-transparent');
+    navbar.removeClass('navbar-default fixed');
+    navbar.removeClass('fadeInDown');
   }
+}
 
-  function sectionHeight() {
-    "use strict";
-    $(".calc-height").height($(window).height() - navbarHeight);
-    $(".header").height($(window).height());
+// Add animation to the button in the right-bottom corner to hide and show it after a distance from the top of the page.
+
+function btnTopFunc() {
+  if($(window).scrollTop() > 100) {
+    btnTop.addClass('fadeInUp');
+    btnTop.removeClass('fadeOutDown');
+
+  } else {
+    btnTop.addClass('fadeOutDown');
+    btnTop.removeClass('fadeInUp');
   }
+}
 
-  function navOnScroll() {
-    if(document.scrollTop() > 100 || $(window).width() < 768) {
+// Add smooth scroll between sections when a specific button is clicked.
 
-      navbar.addClass('navbar-default');
-      navbar.removeClass('navbar-transparent');
-      navbar.addClass('fadeInDown');
+function smoothScrollFunction() {
+  hideToggleOnScroll();
+  $.smoothScroll({
+    scrollTarget: target,
+    easing: 'swing',
+    speed: 700,
+    offset: -navbarHeight // Scroll just to the beginning of the section. The navigation bar no longer hides the content of the section.
+  });
+}
 
-    } else {
-
-      navbar.addClass('navbar-transparent');
-      navbar.removeClass('navbar-default fixed');
-      navbar.removeClass('fadeInDown');
-    }
-  }
-
-  function btnTop() {
-    if(document.scrollTop() > 100) {
-
-      $('.btn-top').addClass('fadeInUp');
-      $('.btn-top').removeClass('fadeOutDown');
-
-    } else {
-
-      $('.btn-top').addClass('fadeOutDown');
-      $('.btn-top').removeClass('fadeInUp');
-    }
-  }
+/////////////////////////////////////////////
+////////////// End of Functions /////////////
+/////////////////////////////////////////////
 
 });

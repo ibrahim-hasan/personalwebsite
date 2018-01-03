@@ -11,6 +11,10 @@
   background: $black;
   color: $white;
 
+  h2 {
+    font-family: $PT_Serif;
+  }
+
   hr {
     @include hr(10%, 3px, $primary, 0.8);
   }

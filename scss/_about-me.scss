@@ -8,6 +8,7 @@
 .about-me {
   background: $grey-1;
   color: $black;
+
   h1, p {
     line-height: 1.5;
   }
@@ -26,10 +27,29 @@
     }
   }
 
-  h1 {
+  h2 {
     color: $primary;
+    text-align: center;
+    font-family: $PT_Serif;
+  }
+
+  .skills {
+    background: $grey-1;
+    height: auto !important;
+  }
+
+  .default-headeing {
+    height: 120px;
+    width: 100%;
+    background-color: $black;
+
+    h2 {
+      color: $white;
+      font-family: $PT_Serif;
+    }
   }
 }
+
 
 /**
 *
@@ -50,6 +70,9 @@
 
 @media screen and (max-width: 992px) {
   .about-me {
-    height: auto !important; /* Solves the height of the container div not extending with its content on small devices */
+
+    .calc-height {
+      height: auto !important; /* Solves the height of the container div not extending with its content on small devices */
+    }
   }
 }

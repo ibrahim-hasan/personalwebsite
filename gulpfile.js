@@ -65,11 +65,15 @@ gulp.task('copy', function() {
   gulp.src(['node_modules/animate.css/animate.min.css'])
     .pipe(gulp.dest('src/animate.css'))
 
-  gulp.src(['node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js'])
+  gulp.src(['node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js'])
     .pipe(gulp.dest('src/jquery-smooth-scroll'))
 
   gulp.src(['node_modules/font-awesome/**/font-awesome.min.css', 'node_modules/font-awesome/**/fontawesome-webfont.*'])
     .pipe(gulp.dest('src/font-awesome'))
+
+  gulp.src(['node_modules/chart.js/dist/chart.min.js'])
+    .pipe(gulp.dest('src/chart.js'))
+
 });
 
 // Default task

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="definition" content="Ibrahim Hasan - This is my personal blog.">
+  <meta name="definition" content="Ibrahim Hasan - This is my personal website.">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Different Title to Each Page -->
-  <title>Home</title>
+  <title>Ibrahim Hasan - Personal Website</title>
   <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
   <!-- fontAwesome for Text Icons -->
@@ -32,7 +31,10 @@
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li id="onAboutMe" class="nav-item">
-              <a class="nav-link" href="#aboutMe">About Me</a>
+              <a class="nav-link" href="#aboutMe">About</a>
+            </li>
+            <li id="onSkills" class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li id="onServices" class="nav-item">
               <a class="nav-link" href="#services">Services</a>
@@ -52,7 +54,7 @@
     <header id="home" class="header calc-height container-fluid d-flex align-items-center justify-content-center">
       <div class="row pt-5 pt-lg-0">
         <div class="col-lg-12">
-          <span class="occupation text-center">Mechatronics Engineer & Web Developer</span>
+          <p class="occupation text-center">Mechatronics Engineer<span class="d-sm-inline d-none"> & </span><br class="d-sm-none d-block">Web Developer</p>
           <h1 class="my-name display-3">Ibrahim Hasan</h1>
           <hr>
           <p class="text-center">
