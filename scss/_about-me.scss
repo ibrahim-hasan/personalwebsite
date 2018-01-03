@@ -15,6 +15,7 @@
 
   img
   {
+    outline: 3px solid $white;
   	box-shadow: 1px 0 7px 2px $blackTran-2;
     -webkit-filter: grayscale(50%);
     filter: grayscale(60%);
@@ -39,9 +40,11 @@
   }
 
   .default-headeing {
-    height: 120px;
     width: 100%;
+    min-height: 120px;
+    padding: 20px 0;
     background-color: $black;
+    text-align: center;
 
     h2 {
       color: $white;

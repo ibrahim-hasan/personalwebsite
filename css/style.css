@@ -249,6 +249,7 @@ a {
   .about-me h1, .about-me p {
     line-height: 1.5; }
   .about-me img {
+    outline: 3px solid #ffffff;
     box-shadow: 1px 0 7px 2px rgba(0, 0, 0, 0.6);
     -webkit-filter: grayscale(50%);
     filter: grayscale(60%);
@@ -267,9 +268,11 @@ a {
     background: #eeeeee;
     height: auto !important; }
   .about-me .default-headeing {
-    height: 120px;
     width: 100%;
-    background-color: #212529; }
+    min-height: 120px;
+    padding: 20px 0;
+    background-color: #212529;
+    text-align: center; }
     .about-me .default-headeing h2 {
       color: #ffffff;
       font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
@@ -321,8 +324,10 @@ a {
   color: #f05f40;
   height: auto !important; }
   .projects .default-headeing {
-    height: 120px;
-    background-color: #212529; }
+    min-height: 120px;
+    padding: 20px 0;
+    background-color: #212529;
+    text-align: center; }
     .projects .default-headeing h2 {
       color: #ffffff;
       font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }

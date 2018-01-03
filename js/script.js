@@ -21,6 +21,10 @@ var calcHeight = $(".calc-height");
 var PT_Serif = "PT Serif";
 var Open_Sans = 'Open Sans';
 
+var webInView = false;
+var computerInView = false;
+var languagesInView = false;
+
 /////////////////////////////////////////////
 //////// End of Variables Declaration ///////
 /////////////////////////////////////////////
@@ -40,6 +44,7 @@ setTimeout(btnTopFunc, 100);
 $(window).scroll(function() {
   setTimeout(navOnScroll, 100);
   setTimeout(btnTopFunc, 100);
+  setTimeout(checkChartView, 500);
 });
 
 // Execute these functions when the view is resized.
@@ -102,211 +107,6 @@ btnTop.click(function() {
 /////////// End of Smooth Scroll ////////////
 /////////////////////////////////////////////
 
-function webFunc() {
-  var webId = document.getElementById('web').getContext('2d');
-  var web = new Chart(webId, {
-      // The type of chart we want to create
-    type: 'horizontalBar',
-
-    // The data for our dataset
-    data: {
-        labels: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "jQuery", "PHP", "WordPress", "NPM", "Gulp.js", "Git & Github"],
-        datasets: [{
-            label: "Level",
-            backgroundColor: '#f05f40',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [100, 100, 80, 90, 20, 70, 15, 25, 60, 70, 80],
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-      maintainAspectRatio: false,
-      legend: {
-          display: false
-      },
-      title: {
-          display: true,
-          text: 'Web Development Skills',
-          fontSize: 22,
-          fontStyle: 'normal',
-          padding: 20,
-          fontFamily: PT_Serif
-      },
-      scales: {
-        yAxes: [{
-          barPercentage: 0.9
-        }],
-        xAxes: [{
-          ticks: {
-              beginAtZero: true
-          },
-          gridLines: {
-            drawOnChartArea: false
-          }
-        }]
-      },
-      tooltips: {
-        displayColors: false
-      }
-    }
-  });
-}
-
-function computerFunc() {
-  var computerId = document.getElementById('computer').getContext('2d');
-  var computer = new Chart(computerId, {
-      // The type of chart we want to create
-    type: 'radar',
-
-    // The data for our dataset
-    data: {
-          labels: ["SolidWorks", "MS Excel", "MS Visio", "MS PowerPoint", "MS Word"],
-          datasets: [
-            {
-              label: "Level",
-              fill: true,
-              backgroundColor: "rgba(240,95,64,0.2)",
-              borderColor: "#f05f40",
-              pointBorderColor: "#f05f40",
-              pointBackgroundColor: "rgba(240,95,64,1)",
-              pointBorderWidth: "3",
-              pointStyle: "circle",
-              data: [8, 4, 10, 10, 10]
-            }
-          ]
-        },
-        options: {
-          maintainAspectRatio: false,
-          legend: {
-            display: false
-          },
-          title: {
-            display: true,
-            text: 'Computer Skills',
-            fontSize: 22,
-            fontStyle: 'normal',
-            padding: 20,
-            fontFamily: PT_Serif
-          },
-          scale: {
-            ticks: {
-              display: false,
-              beginAtZero: true,
-              min: 0,
-              max: 10,
-              steps: 5,
-              stepSize: 2
-            },
-            pointLabels: {
-              fontSize: 12
-            }
-          },
-          tooltips: {
-            displayColors: false
-          },
-        }
-  });
-}
-
-function languagesFunc() {
-  var languagesId = document.getElementById('languages').getContext('2d');
-  var languages = new Chart(languagesId, {
-    // The type of chart we want to create
-    type: 'polarArea',
-
-    // The data for our dataset
-    data: {
-          labels: ["Arabic", "English", "Turkish"],
-          datasets: [
-            {
-              label: "Level",
-              borderWidth: "0.5",
-              backgroundColor: [
-                ('rgba(240,95,64,0.9)'),
-                ('rgba(240,95,64,0.7)'),
-                ('rgba(240,95,64,0.4)')
-              ],
-              data: [10, 8, 2]
-            }
-          ]
-        },
-        options: {
-          maintainAspectRatio: false,
-          legend: {
-            display: true,
-            position: "bottom"
-          },
-          title: {
-            display: true,
-            text: 'Languages',
-            fontSize: 22,
-            fontStyle: 'normal',
-            padding: 20,
-            fontFamily: PT_Serif
-          },
-          scale: {
-            ticks: {
-              display: false,
-              beginAtZero: true,
-              min: 0,
-              max: 10,
-              steps: 5,
-              stepSize: 2
-            },
-            scaleLabel: {
-              display: true
-            }
-          },
-          tooltips: {
-            displayColors: false
-          },
-        }
-  });
-}
-
-var webInView = false;
-var computerInView = false;
-var languagesInView = false;
-
-function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-}
-
-$(window).scroll(function() {
-  setTimeout(checkChartView, 1000);
-});
-
-function checkChartView() {
-  if (isScrolledIntoView('#web')) {
-      if (webInView) { return; }
-      webInView = true;
-      webFunc();
-  } else {
-    webInView = false;
-  }
-  if (isScrolledIntoView('#computer')) {
-      if (computerInView) { return; }
-      computerInView = true;
-      computerFunc();
-  } else {
-    computerInView = false;
-  }
-  if (isScrolledIntoView('#languages')) {
-      if (languagesInView) { return; }
-      languagesInView = true;
-      languagesFunc();
-  } else {
-      languagesInView = false;
-  }
-}
 
 /////////////////////////////////////////////
 ///////////////// Functions /////////////////
@@ -367,6 +167,211 @@ function smoothScrollFunction() {
     offset: -navbarHeight // Scroll just to the beginning of the section. The navigation bar no longer hides the content of the section.
   });
 }
+
+////////////// Animate Charts on Scroll /////////////
+
+// Create a bar chart for web development skills.
+
+function webFunc() {
+  var webId = document.getElementById('web').getContext('2d');
+  var web = new Chart(webId, {
+    // The type of chart we want to create
+    type: 'horizontalBar',
+
+    // The data for our dataset
+    data: {
+      labels: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "jQuery", "PHP", "WordPress", "NPM", "Gulp.js", "Git & Github"],
+      datasets: [{
+        label: "Level",
+        backgroundColor: '#f05f40',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [100, 100, 80, 90, 20, 70, 15, 25, 60, 70, 80],
+      }]
+    },
+
+    // Configuration options go here
+    options: {
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Web Development Skills',
+        fontSize: 22,
+        fontStyle: 'normal',
+        padding: 20,
+        fontFamily: PT_Serif
+      },
+      scales: {
+        yAxes: [{
+          barPercentage: 0.9
+        }],
+        xAxes: [{
+          ticks: {
+            beginAtZero: true
+          },
+          gridLines: {
+            drawOnChartArea: false
+          }
+        }]
+      },
+      tooltips: {
+        displayColors: false
+      }
+    }
+  });
+}
+
+// Create a radar chart for computer skills.
+
+function computerFunc() {
+  var computerId = document.getElementById('computer').getContext('2d');
+  var computer = new Chart(computerId, {
+    // The type of chart we want to create
+    type: 'radar',
+
+    // The data for our dataset
+    data: {
+      labels: ["SolidWorks", "MS Excel", "MS Visio", "MS PowerPoint", "MS Word", "MS Outlook"],
+      datasets: [
+        {
+          label: "Level",
+          fill: true,
+          backgroundColor: "rgba(240,95,64,0.2)",
+          borderColor: "#f05f40",
+          pointBorderColor: "#f05f40",
+          pointBackgroundColor: "rgba(240,95,64,1)",
+          pointBorderWidth: "3",
+          pointStyle: "circle",
+          data: [8, 4, 10, 10, 10, 9]
+        }
+      ]
+    },
+    options: {
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: 'Computer Skills',
+        fontSize: 22,
+        fontStyle: 'normal',
+        padding: 20,
+        fontFamily: PT_Serif
+      },
+      scale: {
+        ticks: {
+          display: false,
+          beginAtZero: true,
+          min: 0,
+          max: 10,
+          steps: 5,
+          stepSize: 2
+        },
+        pointLabels: {
+          fontSize: 12
+        }
+      },
+      tooltips: {
+        displayColors: false
+      },
+    }
+  });
+}
+
+// Create a polar area chart chart for language skills.
+
+function languagesFunc() {
+  var languagesId = document.getElementById('languages').getContext('2d');
+  var languages = new Chart(languagesId, {
+    // The type of chart we want to create
+    type: 'polarArea',
+
+    // The data for our dataset
+    data: {
+      labels: ["Arabic", "English", "Turkish"],
+      datasets: [
+        {
+          label: "Level",
+          borderWidth: "0.5",
+          backgroundColor: [
+            ('rgba(240,95,64,0.9)'),
+            ('rgba(240,95,64,0.7)'),
+            ('rgba(240,95,64,0.4)')
+          ],
+          data: [10, 8, 2]
+        }
+      ]
+    },
+    options: {
+      maintainAspectRatio: false,
+      legend: {
+        display: true,
+        position: "bottom"
+      },
+      title: {
+        display: true,
+        text: 'Language Skills',
+        fontSize: 22,
+        fontStyle: 'normal',
+        padding: 20,
+        fontFamily: PT_Serif
+      },
+      scale: {
+        ticks: {
+          display: false,
+          beginAtZero: true,
+          min: 0,
+          max: 10,
+          steps: 5,
+          stepSize: 2
+        },
+        scaleLabel: {
+          display: true
+        }
+      },
+      tooltips: {
+        displayColors: false
+      },
+    }
+  });
+}
+
+// Calculate the distance from top until the element to help identify if the element appears on screen or not.
+
+function isScrolledIntoView(elem)
+{
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+  var elemTop = $(elem).offset().top;
+  var elemBottom = elemTop + ($(elem).height()/10) ;
+
+  return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+}
+
+// Check if the window displays a specific element.
+
+function checkChartView() {
+  if (isScrolledIntoView('#web')) {
+      if (webInView) { return; }
+      webInView = true;
+      webFunc();
+  }
+  if (isScrolledIntoView('#computer')) {
+      if (computerInView) { return; }
+      computerInView = true;
+      computerFunc();
+  }
+  if (isScrolledIntoView('#languages')) {
+      if (languagesInView) { return; }
+      languagesInView = true;
+      languagesFunc();
+  }
+}
+
+////////// End of Animate Charts on Scroll //////////
 
 /////////////////////////////////////////////
 ////////////// End of Functions /////////////

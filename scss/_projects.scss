@@ -11,8 +11,10 @@
   height: auto !important;
 
   .default-headeing {
-    height: 120px;
+    min-height: 120px;
+    padding: 20px 0;
     background-color: $black;
+    text-align: center;
 
     h2 {
       color: $white;

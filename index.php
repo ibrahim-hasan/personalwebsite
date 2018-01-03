@@ -26,16 +26,16 @@
   </div><!-- End of Row -->
   <div id="skills" class="row skills d-flex flex-column justify-content-between align-items-center">
     <div class="default-headeing row d-flex justify-content-center align-items-center">
-      <h2>Skills</h2>
+      <h2>Here you can see my career-related skills. Take a look!</h2>
     </div>
-    <div class="row container-fluid d-flex justify-content-center align-items-center py-3 mb-5">
-      <div class="col-lg-4 col-md-8 col-12 py-3 py-lg-5">
+    <div class="row container-fluid d-flex justify-content-center align-items-center">
+      <div class="col-lg-4 col-md-8 col-12 my-3 my-lg-5">
         <canvas id="web" width="450" height="350"></canvas>
       </div>
-      <div class="col-lg-4 col-md-8 col-12 py-3 py-lg-5">
+      <div class="col-lg-4 col-md-8 col-12 my-3 my-lg-5">
         <canvas id="computer" width="350" height="350"></canvas>
       </div>
-      <div class="col-lg-4 col-md-8 col-12 py-3 py-lg-5">
+      <div class="col-lg-4 col-md-8 col-12 my-3 my-lg-5">
         <canvas id="languages" width="350" height="350"></canvas>
       </div>
     </div>
