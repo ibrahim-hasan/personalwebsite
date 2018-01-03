@@ -28,7 +28,7 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    background: $primary;
+    background: $black;
     outline: 1px solid $grey-1;
 
     .overlay {
@@ -59,12 +59,12 @@
       font-weight: 600;
       letter-spacing: 1px;
       overflow: hidden;
-      background: $primary;
-      opacity: 0.9;
+      opacity: 0;
       margin: 0;
       margin-bottom: 5px;
       padding: 10px 0;
-      @include transition(background, 0.5s);
+      @include transition(transform, 0.5s);
+      @include transition(opacity, 0.5s);
     }
 
     h1:after {
@@ -75,7 +75,7 @@
       height: 2px;
       background: $white;
       content: '';
-      @include transition(width, 0.5s);
+      @include transition(width, 0.6s);
     }
 
     p {
@@ -96,7 +96,7 @@
       }
 
       h1 {
-        background: transparent;
+        opacity: 1;
       }
 
       h1:after {

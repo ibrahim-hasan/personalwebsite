@@ -1,4 +1,58 @@
-<?php require('header.php'); ?>
+<?php require('header.php');
+
+// Calculate the difference between the current date and a specified one.
+function dateDiff($start_date, $addMonths = true, $addYears = true) {
+
+  $current_date = date('Y-m-d');
+  $d1 = strtotime($start_date);
+  $d2 = strtotime($current_date);
+  $inMonths = 0;
+  $inYears = 0;
+  $years = '';
+  $addAnd = '';
+  $months = '';
+
+  while (($d1 = strtotime("+1 MONTH", $d1)) <= $d2) {
+    $inMonths++;
+    if ($addYears && $inMonths >= 12) {
+      $inYears++;
+      $inMonths = 0;
+    }
+  }
+
+  if($addMonths) {
+    if($inMonths == 0) {
+      $months = '';
+    } else if($inMonths == 1) {
+      $months = $inMonths . ' month';
+    } else {
+      $months = $inMonths . ' months';
+    }
+  }
+
+  if($addYears) {
+
+    if($inYears == 0) {
+      $years = '';
+    } else if($inYears == 1) {
+      $years = $inYears . ' year';
+    } else {
+      $years = $inYears . ' years';
+    }
+  }
+
+  if($addMonths && $addYears) {
+    if($inYears != 0 && $inMonths != 0) {
+      $addAnd = ' and ';
+    } else {
+      $addAnd = '';
+    }
+  }
+  return $years . $addAnd . $months;
+}
+
+?>
+
 <a href="#" id="btnTop" class="btn-top btn btn-sq btn-outline-primary animated" role="button">
     <i class="fa fa-chevron-up fa-1x"></i>
 </a>
@@ -10,17 +64,20 @@
     </div>
     <div class="px-4 px-md-5 row col-lg-8 col-12">
       <h1 class="section-heading">Who am I?</h1>
-      <p class="summary text-justify">Here is some background information about me: I am Ibrahim from Syria.
-      I am a mechatronics engineer, graduated in 2015.
-      I have an ambition, and in order to fulfill it, I have to work hard, think smart,
-      and improve myself. My mother tongue is Arabic, and I am fluent in English.
-      I am an excellent computer user. Recently, I have become interested in web development;
-      in fact, this website is my first project as a front-end web developer, and it was designed
-      using HTML5, CSS3, jQuery Library and some PHP. Presently, my brief knowledge about back-end
-      web development needs to be broadened, thus I am learning PHP.</p>
+      <p class="summary text-justify">
+        I am Ibrahim from Syria; <?php echo dateDiff("1990-03-07", false, true); ?> old.
+        I'm a mechatronics engineer and a web developer.
+        My mother tongue is Arabic, and I am fluent in English. I am an excellent computer user.
+        I've started my web development journey <?php echo dateDiff("2017-11-01"); ?> ago.
+        This website is my first project as a web developer.
+        It's a long way to go; nevertheless, I would love to go farther.
+        <br>
+        Enough talking about myself. I'll let you explore my website by yourself.
+        Please feel free contact me and let's discuss possible work. I look forward to that!
+      </p>
       <hr>
       <div class="col-12 text-center">
-        <a class="btn btn-outline-primary btn-lg btn-skills" href="#skills" role="button">Click me for more!</a>
+        <a class="btn btn-outline-primary btn-lg btn-skills" href="#skills" role="button">Click for more!</a>
       </div>
     </div><!-- End of Nested Row -->
   </div><!-- End of Row -->
@@ -35,7 +92,7 @@
       <div class="col-lg-4 col-md-8 col-12 my-3 my-lg-5">
         <canvas id="computer" width="350" height="350"></canvas>
       </div>
-      <div class="col-lg-4 col-md-8 col-12 my-3 my-lg-5">
+      <div class="col-lg-4 col-md-8 col-sm-12 col-8 my-3 my-lg-5">
         <canvas id="languages" width="350" height="350"></canvas>
       </div>
     </div>
@@ -44,32 +101,46 @@
 
 <!-- Services Section -->
 <section id="services" class="services calc-height feature-box d-flex align-items-center py-5 py-lg-0">
-  <div class="container">
+  <div class="container-fluid">
     <h1 class="section-heading">What can I do for you?</h1>
-    <p class="section-description lead mr-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    <div class="row">
+    <p class="section-description lead mr-auto">
+      I minimized the services I can provide in order to concentrate on what I love to do.
+      I'm sure you won't regret asking me for help.
+    </p>
+    <div class="row align-self-start">
       <div class="col-lg-4">
         <div class="service-heading">
-          <i class="fa fa-area-chart fa-5x fa-fw mb-2"></i>
-          <h5 class="feature-title font-weight-bold">Analytics</h5>
+          <div class="mx-auto d-flex align-items-center justify-content-center">
+            <img style="height: 140px;" class="img-fluid" src="img/services/web-development.png"></img>
+          </div>
+          <h5 class="feature-title font-weight-bold text-left mt-3">Web Development</h5>
         </div>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+        <p class="lead text-left">
+          I hope you like your journey on my website. Well, this is definitely not everything I know. I'm saving the best for you!
+        </p>
       </div>
 
       <div class="col-lg-4">
         <div class="service-heading">
-          <i class="fa fa-book fa-5x fa-fw mb-2"></i>
-          <h5 class="feature-title font-weight-bold">Tutorials</h5>
+          <div class="mx-auto d-flex align-items-center justify-content-center">
+            <img style="height: 140px;" class="img-fluid" src="img/services/en-ar.png"></img>
+          </div>
+          <h5 class="feature-title font-weight-bold text-left mt-3">English/Arabic Translation</h5>
         </div>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+        <p class="lead text-left">
+          With <?php echo dateDiff("2016-06-01"); ?> of experience in this domain. I gladly offer you my service as a freelance translator when and as needed.
+          I have an IELTS certificate.
+        </p>
       </div>
 
       <div class="col-lg-4">
         <div class="service-heading">
-          <i class="fa fa-coffee fa-5x fa-fw mb-2"></i>
-          <h5 class="feature-title font-weight-bold">Relax</h5>
+          <div class="mx-auto d-flex align-items-center justify-content-center">
+            <img style="height: 100px; margin: 20px 0;" class="img-fluid" src="img/services/solidworks.png"></img>
+          </div>
+          <h5 class="feature-title font-weight-bold text-left mt-3">SolidWorks</h5>
         </div>
-        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+        <p class="lead text-left">SolidWorks is a 3D Modeling CAD and Product Design Software. Guess what! I'm competent when it comes to SolidWorks, and I have <?php echo dateDiff("2017-08-01"); ?> of work experience so far.</p>
       </div>
     </div><!-- End of Row -->
   </div><!-- End of Container -->
@@ -85,10 +156,10 @@
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="finished-project">
-          <img class="" src="img/projects/project-1.jpg" alt="">
+          <img class="" src="img/projects/project-1.jpg" alt="Project 1 Image">
           <div class="overlay">
             <h1>My Personal Website</h1>
-    				<p>HTML, SASS, Bootstrap, jQuery, Smooth Scroll, Animate.css, Wow.js, PHP</p>
+    				<p>HTML, SASS, Bootstrap, jQuery, Smooth Scroll, Animate.css, PHP</p>
           </div>
         </a>
       </div>
@@ -97,7 +168,7 @@
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-2.jpg" alt="">
+          <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 2 Image">
           <div class="overlay">
             <h1>Project 2</h1>
     				<p>Description Here.</p>
@@ -109,7 +180,7 @@
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-3.jpg" alt="">
+          <img class="img-fluid" src="img/projects/project-3.jpg" alt="Project 3 Image">
           <div class="overlay">
             <h1>Project 3</h1>
     				<p>Description Here.</p>
@@ -121,7 +192,7 @@
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-4.jpg" alt="">
+          <img class="img-fluid" src="img/projects/project-4.jpg" alt="Project 4 Image">
           <div class="overlay">
             <h1>Project 4</h1>
     				<p>Description Here.</p>
@@ -133,7 +204,7 @@
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-5.jpg" alt="">
+          <img class="img-fluid" src="img/projects/project-5.jpg" alt="Project 5 Image">
           <div class="overlay">
             <h1>Project 5</h1>
     				<p>Description Here.</p>
@@ -145,7 +216,7 @@
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-6.jpg" alt="">
+          <img class="img-fluid" src="img/projects/project-6.jpg" alt="Project 6 Image">
           <div class="overlay">
             <h1>Project 6</h1>
     				<p>Description Here.</p>

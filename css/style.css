@@ -307,7 +307,8 @@ a {
     text-align: center;
     color: #f05f40; }
   .services .feature-title {
-    color: #f05f40; }
+    color: #f05f40;
+    font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif !important; }
 
 /**
 *
@@ -339,7 +340,7 @@ a {
     overflow: hidden;
     position: relative;
     text-align: center;
-    background: #f05f40;
+    background: #212529;
     outline: 1px solid #eeeeee; }
     .projects .hovereffect .overlay {
       width: 100%;
@@ -371,15 +372,18 @@ a {
       font-weight: 600;
       letter-spacing: 1px;
       overflow: hidden;
-      background: #f05f40;
-      opacity: 0.9;
+      opacity: 0;
       margin: 0;
       margin-bottom: 5px;
       padding: 10px 0;
-      -webkit-transition: background 0.5s;
-      -moz-transition: background 0.5s;
-      -o-transition: background 0.5s;
-      transition: background 0.5s; }
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s; }
     .projects .hovereffect h1:after {
       position: absolute;
       bottom: 0;
@@ -388,10 +392,10 @@ a {
       height: 2px;
       background: #ffffff;
       content: '';
-      -webkit-transition: width 0.5s;
-      -moz-transition: width 0.5s;
-      -o-transition: width 0.5s;
-      transition: width 0.5s; }
+      -webkit-transition: width 0.6s;
+      -moz-transition: width 0.6s;
+      -o-transition: width 0.6s;
+      transition: width 0.6s; }
     .projects .hovereffect p {
       margin-left: 10%;
       width: 80%;
@@ -417,7 +421,7 @@ a {
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
     .projects .hovereffect:hover h1 {
-      background: transparent; }
+      opacity: 1; }
     .projects .hovereffect:hover h1:after {
       width: 80%; }
     .projects .hovereffect:hover p {
