@@ -24,7 +24,7 @@
   top: 0;
   z-index: 1020;
   background-color: $navMain;
-  border-bottom: 3px solid $navBorder;
+  border-bottom: 0;
 
   .navbar-brand {
     font-size: 30px;
@@ -56,7 +56,7 @@
 .navbar-transparent {
   position: fixed;
   background-color: $navMainTrans;
-  border-bottom: 2px solid $navBorderTrans;
+  outline: 2px solid $navBorderTrans;
   width:100%;
   top: 0;
   z-index: 1020;

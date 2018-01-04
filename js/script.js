@@ -51,6 +51,7 @@ $(window).scroll(function() {
 
 $(window).resize(function() {
   setTimeout(navOnScroll, 100);
+  navbarHeight = navbar.outerHeight(true);
   sectionHeight();
 });
 

@@ -115,7 +115,7 @@ a {
   top: 0;
   z-index: 1020;
   background-color: #f05f40 !important;
-  border-bottom: 3px solid transparent; }
+  border-bottom: 0; }
   .navbar-default .navbar-brand {
     font-size: 30px; }
     .navbar-default .navbar-brand:hover {
@@ -136,7 +136,7 @@ a {
 .navbar-transparent {
   position: fixed;
   background-color: transparent !important;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  outline: 2px solid rgba(255, 255, 255, 0.3);
   width: 100%;
   top: 0;
   z-index: 1020; }
@@ -204,7 +204,7 @@ a {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
   width: 100%;
