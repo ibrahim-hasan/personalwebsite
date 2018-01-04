@@ -27,7 +27,7 @@
     <!-- Navigation Bar -->
     <nav id="navbar" class="bg-dark navbar-transparent navbar navbar-expand-md navbar-dark animated fadeIn">
       <div class="container">
-        <a class="navbar-brand animated pulse infinite d-sm-block d-none" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
+        <a class="navbar-brand animated pulse infinite" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

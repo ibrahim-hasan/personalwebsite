@@ -106,8 +106,16 @@
 }
 
 @media screen and (max-width: 576px) {
-  .navbar {
-    background-color: $primary;
+  .navbar-default {
+
+    .navbar-brand {
+      font-size: 25px;
+    }
+
+    .navbar-toggler {
+    padding: .25rem .50rem;
+    font-size: 1rem;
+    }
 
     .navbar-nav {
       flex-direction: column;
@@ -121,8 +129,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 992px) {
-
 }

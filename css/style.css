@@ -180,16 +180,19 @@ a {
         margin: 0 2px; } }
 
 @media screen and (max-width: 576px) {
-  .navbar {
-    background-color: #f05f40; }
-    .navbar .navbar-nav {
-      flex-direction: column;
-      text-align: center;
-      margin: 0 auto;
-      margin-top: 10px;
-      padding-left: 0; }
-      .navbar .navbar-nav .nav-item {
-        margin: 0 1px; } }
+  .navbar-default .navbar-brand {
+    font-size: 25px; }
+  .navbar-default .navbar-toggler {
+    padding: .25rem .50rem;
+    font-size: 1rem; }
+  .navbar-default .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 0; }
+    .navbar-default .navbar-nav .nav-item {
+      margin: 0 1px; } }
 
 /**
 * Head Section

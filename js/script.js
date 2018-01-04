@@ -132,7 +132,7 @@ function sectionHeight() {
 // Change the styling and animation of the navigation bar depending on the location and width of screen.
 
 function navOnScroll() {
-  if($(window).scrollTop() > 100 || $(window).width() < 768) {
+  if($(window).scrollTop() > 100 || $(window).width() < 586) {
     navbar.addClass('navbar-default');
     navbar.removeClass('navbar-transparent');
     navbar.addClass('fadeInDown');
