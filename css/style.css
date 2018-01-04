@@ -204,7 +204,7 @@ a {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
   width: 100%;
