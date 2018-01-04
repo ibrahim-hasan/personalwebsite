@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="definition" content="Ibrahim Hasan - This is my personal website.">
   <!-- Required meta tags -->
+  <meta name="definition" content="Ibrahim Hasan - This is my personal website.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Website Icon -->
+  <link rel="icon" href="img/logo.png">
+  <!-- Website Title -->
   <title>Ibrahim Hasan - Personal Website</title>
   <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
-  <!-- fontAwesome for Text Icons -->
+  <!-- FontAwesome for Text Icons -->
   <link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
-  <!-- Google Font for Brand Name -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,400i,600,800|PT+Serif:400,400i,700,700i" rel="stylesheet">
-  <!-- My Custom Stylesheet -->
-  <link rel="stylesheet" href="css/style.min.css">
   <!-- Animate.css Plugin -->
   <link rel="stylesheet" href="src/animate.css/animate.min.css">
-  </head>
+  <!-- My Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+  <!-- Scroll Spy -->
   <body data-spy="scroll" data-offset="300" data-target="#navbar">
+
+    <!-- Navigation Bar -->
     <nav id="navbar" class="bg-dark navbar-transparent navbar navbar-expand-md navbar-dark animated fadeIn">
       <div class="container">
         <a class="navbar-brand animated pulse infinite d-sm-block d-none" href="index.php" id="navbar-brand">Ibrahim Hasan</a>
@@ -47,8 +54,8 @@
             </li>
           </ul>
         </div><!-- End of Collapse -->
-      </div>
-    </nav>
+      </div><!-- End of Container -->
+    </nav><!-- Endo of Navigation Bar -->
 
     <!-- Header -->
     <header id="home" class="header calc-height container-fluid d-flex align-items-center justify-content-center">
@@ -59,7 +66,8 @@
           <hr>
           <p class="text-center">
             Thank you for visiting my website. Please continue your journey.
-            I promise you, you will not regret it!</p>
+            I promise you, you will not regret it!
+          </p>
           <br>
           <a class="btn btn-outline-info btn-lg btn-about" href="#aboutMe">Want to know me more?</a>
         </div>

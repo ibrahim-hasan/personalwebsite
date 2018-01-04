@@ -1,2 +1,2 @@
 # ibrahimhasan
-This is my personal online portfolio in which I like to improve my web developing skills.
+This is my personal online portfolio. Here you can find my career related information.

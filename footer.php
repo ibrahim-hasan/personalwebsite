@@ -56,7 +56,7 @@
 
       </div><!-- End of Row -->
     </div><!-- End of Container -->
-  </footer>
+  </footer><!-- End of Footer -->
 
   <!--Copyright-->
   <div class="copyright d-none d-md-block">
@@ -65,12 +65,17 @@
     </p>
   </div><!-- End of Copyright -->
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- jQuery -->
   <script src="src/jquery/jquery.min.js"></script>
+  <!-- Smooth Scroll -->
   <script src="src/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+  <!-- Chart.js -->
   <script src="src/chart.js/chart.min.js"></script>
+  <!-- Popper.js (Required for Bootstrap) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
   <script src="src/bootstrap/js/bootstrap.min.js"></script>
+  <!-- My JavaScript File -->
   <script src="js/script.min.js"></script>
 
 </body>

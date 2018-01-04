@@ -7,15 +7,17 @@ var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
 // Set the banner content
-var banner = ['/*!\n',
-  ' * Ibrahim Hasan - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2018-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/IbrahimHasanEng/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
+var banner = [
+  '/**',
+  ' ** <%= pkg.name %> - <%= pkg.description %>',
+  ' * @version v<%= pkg.version %>',
+  ' * @copyright <%= pkg.authors %> ' + (new Date()).getFullYear(),
+  ' * @license <%= pkg.license %>',
+  ' **/',
   ''
-].join('');
+].join('\n');
 
-// Compiles SCSS files from /scss into /css
+// Compile SCSS files from /scss into /css
 gulp.task('sass', function() {
   return gulp.src('scss/style.scss')
     .pipe(sass())
@@ -76,10 +78,10 @@ gulp.task('copy', function() {
 
 });
 
-// Default task
+// Default task.
 gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
 
-// Configure the browserSync task
+// Configure the browserSync task.
 gulp.task('browserSync', function() {
   browserSync.init({
     open: 'external',
@@ -88,16 +90,17 @@ gulp.task('browserSync', function() {
   })
 });
 
-// Dev task with browserSync
+// Dev task with browserSync.
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
   gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('css/*.css', ['minify-css']);
   gulp.watch('js/*.js', ['minify-js']);
-  // Reloads the browser whenever HTML or JS files change
+  // Reloads the browser whenever HTML or JS files change.
   gulp.watch('*.php', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
   gulp.watch('css/*.css', browserSync.reload);
 });
 
 // Default task (runs at initiation: gulp --verbose)
+// Comment this if you want to run all tasks in this file.
 gulp.task('default', ['dev']);

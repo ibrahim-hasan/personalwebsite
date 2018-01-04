@@ -1,6 +1,6 @@
 {
     "title": "Ibrahim Hasan's Personal Website",
-    "name": "mypersonalwebsite",
+    "name": "personalwebsite",
     "version": "1.0.0",
     "description": "This is my personal website, developed by me.",
     "main": "index.php",
@@ -21,7 +21,7 @@
         "email": "ibrahim_hasan_eng@hotmail.com"
     },
     "license": "MIT",
-    "author": "Ibrahim Hasan",
+    "authors": "Ibrahim Hasan",
     "contributors": [],
     "repository": {
         "type": "git",

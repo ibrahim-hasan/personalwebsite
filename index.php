@@ -53,11 +53,14 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
 
 ?>
 
+<!-- Scroll-to-top Button -->
 <a href="#" id="btnTop" class="btn-top btn btn-sq btn-outline-primary animated" role="button">
     <i class="fa fa-chevron-up fa-1x"></i>
 </a>
+
 <!-- About Me Section -->
 <section id="aboutMe" class="about-me align-items-center" style="overflow: hidden">
+  <!-- About Me Row -->
   <div class="row calc-height justify-content-left align-items-center py-5 py-lg-0">
     <div class="mx-lg-0 mx-auto col-lg-4 col-6 main-image p-lg-0 pb-3 d-block">
       <img class="img-fluid" src="img/ibrahimhasan.jpg" alt="Personal Photo">
@@ -81,6 +84,8 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
       </div>
     </div><!-- End of Nested Row -->
   </div><!-- End of Row -->
+
+  <!-- Skills Row -->
   <div id="skills" class="row skills d-flex flex-column justify-content-between align-items-center">
     <div class="default-headeing row d-flex justify-content-center align-items-center">
       <h2>Here you can see my career-related skills. Take a look!</h2>
@@ -95,8 +100,8 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
       <div class="col-lg-4 col-md-8 col-sm-12 col-8 my-3 my-lg-5">
         <canvas id="languages" width="350" height="350"></canvas>
       </div>
-    </div>
-  </div>
+    </div><!-- End of Nested Row -->
+  </div><!-- End of Skills Row -->
 </section><!-- End of About Me Section -->
 
 <!-- Services Section -->
@@ -104,10 +109,11 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
   <div class="container-fluid">
     <h1 class="section-heading">What can I do for you?</h1>
     <p class="section-description lead mr-auto">
-      I minimized the services I can provide in order to concentrate on what I love to do.
+      I reduced the number of services I provide in order to concentrate on what I love to do.
       I'm sure you won't regret asking me for help.
     </p>
     <div class="row align-self-start">
+
       <div class="col-lg-4">
         <div class="service-heading">
           <div class="mx-auto d-flex align-items-center justify-content-center">
@@ -142,6 +148,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
         </div>
         <p class="lead text-left">SolidWorks is a 3D Modeling CAD and Product Design Software. Guess what! I'm competent when it comes to SolidWorks, and I have <?php echo dateDiff("2017-08-01"); ?> of work experience so far.</p>
       </div>
+
     </div><!-- End of Row -->
   </div><!-- End of Container -->
 </section><!-- End of Services Section -->
