@@ -19,11 +19,15 @@
   <link rel="stylesheet" href="src/animate.css/animate.min.css">
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- jQuery -->
+  <script src="src/jquery/jquery.min.js"></script>
+  <!-- Modernizr -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 </head>
 
   <!-- Scroll Spy -->
   <body data-spy="scroll" data-offset="300" data-target="#navbar">
-
+    <div class="se-pre-con"></div>
     <!-- Navigation Bar -->
     <nav id="navbar" class="bg-dark navbar-transparent navbar navbar-expand-md navbar-dark animated fadeIn">
       <div class="container">

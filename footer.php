@@ -65,8 +65,7 @@
     </p>
   </div><!-- End of Copyright -->
 
-  <!-- jQuery -->
-  <script src="src/jquery/jquery.min.js"></script>
+  
   <!-- Smooth Scroll -->
   <script src="src/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
   <!-- Chart.js -->
