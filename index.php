@@ -177,8 +177,8 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
         <a href="#" class="unfinished-project">
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 2 Image">
           <div class="overlay">
-            <h1>Project 2</h1>
-    				<p>Description Here.</p>
+            <h1>Project 2: Coming soon!</h1>
+    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -187,10 +187,10 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-3.jpg" alt="Project 3 Image">
+          <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 3 Image">
           <div class="overlay">
             <h1>Project 3</h1>
-    				<p>Description Here.</p>
+    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -199,10 +199,10 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-4.jpg" alt="Project 4 Image">
+          <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 4 Image">
           <div class="overlay">
             <h1>Project 4</h1>
-    				<p>Description Here.</p>
+    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -211,10 +211,10 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-5.jpg" alt="Project 5 Image">
+          <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 5 Image">
           <div class="overlay">
             <h1>Project 5</h1>
-    				<p>Description Here.</p>
+    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -223,10 +223,10 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
         <a href="#" class="unfinished-project">
-          <img class="img-fluid" src="img/projects/project-6.jpg" alt="Project 6 Image">
+          <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 6 Image">
           <div class="overlay">
             <h1>Project 6</h1>
-    				<p>Description Here.</p>
+    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
           </div>
         </a>
       </div>

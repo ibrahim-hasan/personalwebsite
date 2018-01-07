@@ -45,8 +45,7 @@
       display: block;
       position: relative;
       max-width: none;
-      width: calc(100% + 20px);
-      @include transform3d(-20px, 0, 0);
+      width: 100%;
       @include transition(all, 0.5s);
     }
 
@@ -92,7 +91,7 @@
     &:hover {
       img {
         opacity: 0.1;
-        @include transform3d();
+        transform: scale(1.1);
       }
 
       h1 {
