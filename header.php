@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
   <!-- Required meta tags -->
-  <meta name="definition" content="Ibrahim Hasan - This is my personal website.">
+  <meta name="definition" content="Ibrahim Hasan - Mechatronics Engineer and Web Developer. This is my personal website.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Website Icon -->
   <link rel="icon" href="img/logo.png">
   <!-- Website Title -->
   <title>Ibrahim Hasan - Personal Website</title>
+  <!-- These are needed when sharing the website -->
+  <meta property="fb:app_id"             content="776136429262946" />
+  <meta property="og:url"                content="http://www.ibrahim-hasan.com" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="Ibrahim Hasan" />
+  <meta property="og:description"        content="This is my personal website. Please go ahead and explore it, and let's discuss work!" />
+  <meta property="og:image"              content="http://preview.ibb.co/hnwdE6/ibrahimhasan.jpg" />
+  <meta property="og:image:width" content="1024"/>
+  <meta property="og:image:height" content="1024"/>
   <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
   <!-- FontAwesome for Text Icons -->

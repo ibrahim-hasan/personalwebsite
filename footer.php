@@ -35,19 +35,19 @@
           <ul>
             <!--Skype-->
             <li class="list-item">
-              <a class="skype" href="tel: (+90) 531 959 1332">
+              <a class="skype" href="tel:(+90)5319591332">
                 <i class="fa fa-skype fa-2x" aria-hidden="true"></i>
               </a>
             </li>
             <!--Email-->
             <li class="list-item">
-              <a class="email" href="mailto: ibrahim_hasan_eng@hotmail.com">
+              <a class="email" href="mailto:ibrahim_hasan_eng@hotmail.com">
                 <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
               </a>
             </li>
             <!--Phone Number-->
             <li class="list-item">
-              <a class="phone" href="tel: (+90) 531 959 1332">
+              <a class="phone" href="tel:(+90)5319591332">
                 <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
               </a>
             </li>
@@ -65,7 +65,6 @@
     </p>
   </div><!-- End of Copyright -->
 
-  
   <!-- Smooth Scroll -->
   <script src="src/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
   <!-- Chart.js -->

@@ -68,9 +68,9 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
     <div class="px-4 px-md-5 row col-lg-8 col-12">
       <h1 class="section-heading">Who am I?</h1>
       <p class="summary text-justify">
-        I am Ibrahim from Syria; <?php echo dateDiff("1990-03-07", false, true); ?> old.
-        I'm a mechatronics engineer and a web developer.
-        My mother tongue is Arabic, and I am fluent in English. I am an excellent computer user.
+        I am Ibrahim&#8212;<em>I bet you've already got that, since it's written everywhere</em> <i class="fa fa-smile-o" aria-hidden="true"></i>; <?php echo dateDiff("1990-03-07", false, true); ?> old.
+        I'm a mechatronics engineer and a web developer with excellent computer skills.
+        My mother tongue is Arabic, and I am fluent in English.<br>
         I've started my web development journey <?php echo dateDiff("2017-11-01"); ?> ago.
         This website is my first project as a web developer.
         It's a long way to go; nevertheless, I would love to go farther.
@@ -80,7 +80,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
       </p>
       <hr>
       <div class="col-12 text-center">
-        <a class="btn btn-outline-primary btn-lg btn-skills" href="#skills" role="button">Click for more!</a>
+        <a class="btn btn-outline-primary btn-lg btn-skills" href="#skills" role="button">Learn more about me!</a>
       </div>
     </div><!-- End of Nested Row -->
   </div><!-- End of Row -->
@@ -117,7 +117,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
       <div class="col-lg-4">
         <div class="service-heading">
           <div class="mx-auto d-flex align-items-center justify-content-center">
-            <img style="height: 140px;" class="img-fluid" src="img/services/web-development.png"></img>
+            <img style="height: 140px;" class="img-fluid" src="img/services/web-development.png" alt="Web Development Icon">
           </div>
           <h5 class="feature-title font-weight-bold text-left mt-3">Web Development</h5>
         </div>
@@ -129,7 +129,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
       <div class="col-lg-4">
         <div class="service-heading">
           <div class="mx-auto d-flex align-items-center justify-content-center">
-            <img style="height: 140px;" class="img-fluid" src="img/services/en-ar.png"></img>
+            <img style="height: 140px;" class="img-fluid" src="img/services/en-ar.png" alt="Translation Icon">
           </div>
           <h5 class="feature-title font-weight-bold text-left mt-3">English/Arabic Translation</h5>
         </div>
@@ -142,7 +142,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
       <div class="col-lg-4">
         <div class="service-heading">
           <div class="mx-auto d-flex align-items-center justify-content-center">
-            <img style="height: 100px; margin: 20px 0;" class="img-fluid" src="img/services/solidworks.png"></img>
+            <img style="height: 100px; margin: 20px 0;" class="img-fluid" src="img/services/solidworks.png" alt="SolidWorks Icon">
           </div>
           <h5 class="feature-title font-weight-bold text-left mt-3">SolidWorks</h5>
         </div>
@@ -166,7 +166,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
           <img class="" src="img/projects/project-1.jpg" alt="Project 1 Image">
           <div class="overlay">
             <h1>My Personal Website</h1>
-    				<p>HTML, SASS, Bootstrap, jQuery, Smooth Scroll, Animate.css, PHP</p>
+    				<p>HTML, SASS, Bootstrap, jQuery, Smooth Scroll, Animate.css, Chart.js, PHP</p>
           </div>
         </a>
       </div>
@@ -178,7 +178,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 2 Image">
           <div class="overlay">
             <h1>Project 2: Coming soon!</h1>
-    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
+    				<p>This is a placeholder which has my future company's logo, 6S Company. The logo is designed by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -190,7 +190,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 3 Image">
           <div class="overlay">
             <h1>Project 3</h1>
-    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
+    				<p>This is a placeholder which has my future company's logo, 6S Company. The logo is designed by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -202,7 +202,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 4 Image">
           <div class="overlay">
             <h1>Project 4</h1>
-    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
+    				<p>This is a placeholder which has my future company's logo, 6S Company. The logo is designed by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -214,7 +214,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 5 Image">
           <div class="overlay">
             <h1>Project 5</h1>
-    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
+    				<p>This is a placeholder which has my future company's logo, 6S Company. The logo is designed by: KaisCo.dk</p>
           </div>
         </a>
       </div>
@@ -226,7 +226,7 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 6 Image">
           <div class="overlay">
             <h1>Project 6</h1>
-    				<p>This is a placeholder which has my future company logo, 6S Company. The logo is made by: KaisCo.dk</p>
+    				<p>This is a placeholder which has my future company's logo, 6S Company. The logo is designed by: KaisCo.dk</p>
           </div>
         </a>
       </div>
