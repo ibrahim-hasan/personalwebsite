@@ -26,6 +26,8 @@
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,400i,600,800|PT+Serif:400,400i,700,700i" rel="stylesheet">
   <!-- Animate.css Plugin -->
   <link rel="stylesheet" href="src/animate.css/animate.min.css">
+  <!-- jQuery Animated Headline Plugin -->
+  <link rel="stylesheet" href="src/jquery-animated-headline/css/jquery.animatedheadline.css">
   <!-- My Custom Stylesheet -->
   <link rel="stylesheet" href="css/style.min.css">
   <!-- jQuery -->
@@ -75,10 +77,17 @@
           <p class="occupation text-center">Mechatronics Engineer<span class="d-sm-inline d-none"> & </span><br class="d-sm-none d-block">Web Developer</p>
           <h1 class="my-name display-3">Ibrahim Hasan</h1>
           <hr>
-          <p class="text-center">
-            Thank you for visiting my website. Please continue your journey.
-            I promise you, you will not regret it!
-          </p>
+          <div class="animated-headline text-center">
+            <h1 class="ah-headline">
+              <span class="ah-words-wrapper">
+                <!-- <span class="lead">Me: </span> -->
+                <b class="is-visible animated-text">Hey there!</b>
+                <b class="animated-text">Thank you for visiting my website.</b>
+                <b class="animated-text">Please continue your journey.</b>
+                <b class="animated-text">I promise you, you will not regret it!</b>
+              </span>
+            </h1>
+          </div>
           <br>
           <a class="btn btn-outline-info btn-lg btn-about" href="#aboutMe">Want to know me more?</a>
         </div>

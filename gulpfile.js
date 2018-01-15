@@ -61,6 +61,9 @@ gulp.task('copy', function() {
   gulp.src(['node_modules/bootstrap/dist/**/bootstrap.min.css', 'node_modules/bootstrap/dist/**/bootstrap.min.js'])
     .pipe(gulp.dest('src/bootstrap'))
 
+  gulp.src(['node_modules/jquery-animated-headlines/dist/**/jquery-animatedheadlines.css', 'node_modules/jquery-animated-headlines/dist/**/jquery-animatedheadline.min.js'])
+    .pipe(gulp.dest('src/jquery-animated-headline'))
+
   gulp.src(['node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest('src/jquery'))
 

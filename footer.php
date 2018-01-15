@@ -67,6 +67,8 @@
 
   <!-- Smooth Scroll -->
   <script src="src/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+  <!-- jQuery Animated Headline -->
+  <script src="src/jquery-animated-headline/js/jquery.animatedheadline.min.js"></script>
   <!-- Chart.js -->
   <script src="src/chart.js/chart.min.js"></script>
   <!-- Popper.js (Required for Bootstrap) -->

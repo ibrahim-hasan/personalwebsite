@@ -44,13 +44,18 @@ var languagesInView = false;
 sectionHeight();
 setTimeout(navOnScroll, 100);
 setTimeout(btnTopFunc, 100);
+webFunc();
+computerFunc();
+languagesFunc();
+$('.animated-headline').animatedHeadline({
+  animationType: 'type'
+});
 
 // Execute these functions when scrolling.
 
 $(window).scroll(function() {
   setTimeout(navOnScroll, 100);
   setTimeout(btnTopFunc, 100);
-  setTimeout(checkChartView, 500);
 });
 
 // Execute these functions when the view is resized.
@@ -345,40 +350,6 @@ function languagesFunc() {
     }
   });
 }
-
-// Calculate the distance from top until the element to help identify if the element appears on screen or not.
-
-function isScrolledIntoView(elem)
-{
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + ($(elem).height()/10) ;
-
-  return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-}
-
-// Check if the window displays a specific element.
-
-function checkChartView() {
-  if (isScrolledIntoView('#web')) {
-      if (webInView) { return; }
-      webInView = true;
-      webFunc();
-  }
-  if (isScrolledIntoView('#computer')) {
-      if (computerInView) { return; }
-      computerInView = true;
-      computerFunc();
-  }
-  if (isScrolledIntoView('#languages')) {
-      if (languagesInView) { return; }
-      languagesInView = true;
-      languagesFunc();
-  }
-}
-
-////////// End of Animate Charts on Scroll //////////
 
 /////////////////////////////////////////////
 ////////////// End of Functions /////////////

@@ -28,6 +28,12 @@
     font-weight: 800;
   }
 
+  .animated-text {
+    font-family: $PT_Serif;
+    font-weight: 400;
+    font-size: 26px;
+  }
+
   hr {
     @include hr(60%, 3px, $primary, 0.5);
   }
@@ -45,6 +51,10 @@
       letter-spacing: normal;
       line-height: 1.2;
     }
+  }
+
+  .animated-text {
+    font-size: 20px !important;
   }
 }
 
