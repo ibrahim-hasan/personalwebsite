@@ -22,7 +22,8 @@ $z: 0) {
 
 @mixin background-image(
 $url: url(../img/header.jpg),
-$size: cover, $repeat: no-repeat,
+$size: cover,
+$repeat: no-repeat,
 $position: right center,
 $color: $blackTran-2,
 $blendMode: color ) {

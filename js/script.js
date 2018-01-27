@@ -192,12 +192,12 @@ function webFunc() {
 
     // The data for our dataset
     data: {
-      labels: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "jQuery", "PHP", "MySQL", "WordPress", "NPM", "Gulp.js", "Git & Github"],
+      labels: ["HTML", "CSS", "SASS", "Bootstrap", "JavaScript", "jQuery", "PHP", "Laravel", "MySQL", "WordPress", "NPM", "Gulp.js", "Git & Github"],
       datasets: [{
         label: "Level",
         backgroundColor: '#f05f40',
         borderColor: 'rgb(255, 99, 132)',
-        data: [100, 100, 80, 90, 20, 70, 15, 40, 25, 60, 70, 80],
+        data: [95, 100, 80, 90, 20, 70, 50, 40, 55, 50, 60, 70, 80],
       }]
     },
 

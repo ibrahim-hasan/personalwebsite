@@ -296,6 +296,9 @@ a {
     color: #f05f40;
     text-align: center;
     font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
+  .about-me .summary a {
+    text-decoration: none;
+    color: blue !important; }
   .about-me .skills {
     background: #eeeeee;
     height: auto !important; }
@@ -303,7 +306,15 @@ a {
     width: 100%;
     min-height: 120px;
     padding: 20px 10px;
-    background-color: #212529;
+    background-image: url(../img/black.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: rgba(0, 0, 0, 0.6);
+    background-color: none;
+    background-blend-mode: color;
     text-align: center; }
     .about-me .default-headeing h2 {
       color: #ffffff;
@@ -328,9 +339,17 @@ a {
 * Services Section
 */
 .services {
-  background-color: #ffffff;
+  background-image: url(../img/simple.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: rgba(0, 0, 0, 0.6);
+  background-color: none;
+  background-blend-mode: color;
   text-align: center;
-  color: #666666; }
+  color: #333333; }
   .services h1 {
     color: #212529; }
   .services .service-heading {
@@ -359,7 +378,15 @@ a {
   .projects .default-headeing {
     min-height: 120px;
     padding: 20px 10px;
-    background-color: #212529;
+    background-image: url(../img/black.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: rgba(0, 0, 0, 0.6);
+    background-color: none;
+    background-blend-mode: color;
     text-align: center; }
     .projects .default-headeing h2 {
       color: #ffffff;
@@ -476,10 +503,19 @@ a {
 */
 .footer {
   width: 100%;
-  height: 400px;
-  background: #212529;
+  height: 600px;
+  background-image: url(../img/footer.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: none;
   color: #ffffff; }
   .footer h2 {
+    margin-top: 150px;
     font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif; }
   .footer hr {
     width: 10%;

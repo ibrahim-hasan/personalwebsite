@@ -7,11 +7,12 @@
 
 .footer {
   width: 100%;
-  height: 400px;
-  background: $black;
+  height: 600px;
+  @include background-image(url(../img/footer.jpg), cover, no-repeat, right top, $blackTran-2, none);
   color: $white;
 
   h2 {
+    margin-top: 150px;
     font-family: $PT_Serif;
   }
 

@@ -23,7 +23,7 @@
             </li>
             <!--Github-->
             <li class="list-item">
-              <a class="github" href="https://github.com/IbrahimHasanEng" target="_blank">
+              <a class="github" href="https://github.com/ibrahim-hasan" target="_blank">
                 <i class="fa fa-github fa-2x" aria-hidden="true"></i>
               </a>
             </li>

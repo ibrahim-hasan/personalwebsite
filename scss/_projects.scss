@@ -13,7 +13,7 @@
   .default-headeing {
     min-height: 120px;
     padding: 20px 10px;
-    background-color: $black;
+    @include background-image(url(../img/black.jpg), cover, no-repeat, $blackTran-2, none);
     text-align: center;
 
     h2 {

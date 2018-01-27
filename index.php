@@ -71,12 +71,13 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
         I am Ibrahim&#8212;<em>I bet you've already got that, since it's written everywhere</em> <i class="fa fa-smile-o" aria-hidden="true"></i>; <?php echo dateDiff("1990-03-07", false, true); ?> old.
         I'm a mechatronics engineer and a web developer with excellent computer skills.
         My mother tongue is Arabic, and I am fluent in English.<br>
-        I've started my web development journey <?php echo dateDiff("2017-11-01"); ?> ago.
+        I've started my web development journey <?php echo dateDiff("2017-10-25"); ?> ago.
         This website is my first project as a web developer.
-        It's a long way to go; nevertheless, I would love to go farther.
+        It's a long way to go; nevertheless, I would love to go farther.<br>
+        Presently, I am dedicating myself to learn Back-end Development, and therefore developing a <a href="https://github.com/ibrahim-hasan/blog" target="_blank">blog website</a> using Laravel and PHP.
         <br>
         Enough talking about myself. I'll let you explore my website by yourself.
-        Please feel free contact me and let's discuss possible work. I look forward to that!
+        Please feel free to contact me and let's discuss possible work. I look forward to that!
       </p>
       <hr>
       <div class="col-12 text-center">
@@ -174,11 +175,11 @@ function dateDiff($start_date, $addMonths = true, $addYears = true) {
 
     <div class="project col-lg-4 col-md-6 col-sm-12">
       <div class="hovereffect">
-        <a href="#" class="unfinished-project">
+        <a href="https://github.com/ibrahim-hasan/blog" class="unfinished-project" target="_blank">
           <img class="img-fluid" src="img/projects/project-2.jpg" alt="Project 2 Image">
           <div class="overlay">
-            <h1>Project 2: Coming soon!</h1>
-    				<p>This is a placeholder which has my future company's logo, 6S Company. The logo is designed by: KaisCo.dk</p>
+            <h1>BLOG: Coming soon!</h1>
+    				<p>HTML, SASS, Bootstrap, jQuery, Laravel, PHP</p>
           </div>
         </a>
       </div>
